@@ -1,0 +1,230 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3757879 */
+  src: url('//at.alicdn.com/t/c/font_3757879_1rqlvnxzg2j.woff2?t=1668003206822') format('woff2'),
+       url('//at.alicdn.com/t/c/font_3757879_1rqlvnxzg2j.woff?t=1668003206822') format('woff'),
+       url('//at.alicdn.com/t/c/font_3757879_1rqlvnxzg2j.ttf?t=1668003206822') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-xiangxiajiantou:before {
+  content: "\e65e";
+}
+
+.icon-a-39icon_Twitter_nor:before {
+  content: "\e68f";
+}
+
+.icon-a-40icon_Twitter_hig:before {
+  content: "\e690";
+}
+
+.icon-a-42icon_ins_hig:before {
+  content: "\e691";
+}
+
+.icon-a-41icon_ins_nor:before {
+  content: "\e692";
+}
+
+.icon-a-43icon_facebook_nor:before {
+  content: "\e693";
+}
+
+.icon-a-44icon_facebook_hig:before {
+  content: "\e694";
+}
+
+.icon-a-45icon_paypal_nor:before {
+  content: "\e695";
+}
+
+.icon-a-46icon_paypal_hig:before {
+  content: "\e696";
+}
+
+.icon-a-47icon_VISA_nor:before {
+  content: "\e697";
+}
+
+.icon-a-49icon_zhifubao_nor:before {
+  content: "\e698";
+}
+
+.icon-a-48icon_VISA_hig:before {
+  content: "\e699";
+}
+
+.icon-a-51icon_nor:before {
+  content: "\e69a";
+}
+
+.icon-a-52icon_nor:before {
+  content: "\e69b";
+}
+
+.icon-a-53icon_nor:before {
+  content: "\e69c";
+}
+
+.icon-a-50icon_zhifubao_hig:before {
+  content: "\e69d";
+}
+
+.icon-a-20icon_search01:before {
+  content: "\e67c";
+}
+
+.icon-a-21icon_money:before {
+  content: "\e67d";
+}
+
+.icon-a-23icon_clock1:before {
+  content: "\e67e";
+}
+
+.icon-a-24icon_return_goods:before {
+  content: "\e67f";
+}
+
+.icon-a-22icon_car1:before {
+  content: "\e680";
+}
+
+.icon-a-25icon_refund:before {
+  content: "\e681";
+}
+
+.icon-a-27icon_add:before {
+  content: "\e682";
+}
+
+.icon-a-26icon_edit:before {
+  content: "\e683";
+}
+
+.icon-a-30icon_phone:before {
+  content: "\e684";
+}
+
+.icon-a-31icon_servicesvg:before {
+  content: "\e685";
+}
+
+.icon-a-28icon_FAQ:before {
+  content: "\e686";
+}
+
+.icon-a-35icon_step4:before {
+  content: "\e687";
+}
+
+.icon-a-38icon_more1:before {
+  content: "\e688";
+}
+
+.icon-a-32icon_step1:before {
+  content: "\e689";
+}
+
+.icon-a-36icon_step5:before {
+  content: "\e68a";
+}
+
+.icon-a-29icon_technical-support:before {
+  content: "\e68b";
+}
+
+.icon-a-34icon_step3:before {
+  content: "\e68c";
+}
+
+.icon-a-33icon_step2:before {
+  content: "\e68d";
+}
+
+.icon-a-37icon_step6:before {
+  content: "\e68e";
+}
+
+.icon-a-01product:before {
+  content: "\e669";
+}
+
+.icon-a-03shopping-cart_nor:before {
+  content: "\e66a";
+}
+
+.icon-a-02shopping-cart_hig:before {
+  content: "\e66b";
+}
+
+.icon-a-04headt_account:before {
+  content: "\e66c";
+}
+
+.icon-a-05google:before {
+  content: "\e66d";
+}
+
+.icon-a-06drop-down_open:before {
+  content: "\e66e";
+}
+
+.icon-a-07drop-down_close:before {
+  content: "\e66f";
+}
+
+.icon-a-09drop-down1_close:before {
+  content: "\e670";
+}
+
+.icon-a-08drop-down1_open:before {
+  content: "\e671";
+}
+
+.icon-a-10search:before {
+  content: "\e672";
+}
+
+.icon-a-12more:before {
+  content: "\e673";
+}
+
+.icon-a-11return:before {
+  content: "\e674";
+}
+
+.icon-a-13icon_card:before {
+  content: "\e675";
+}
+
+.icon-a-14icon_good:before {
+  content: "\e676";
+}
+
+.icon-a-19icon_clock:before {
+  content: "\e677";
+}
+
+.icon-a-18icon_fire:before {
+  content: "\e678";
+}
+
+.icon-a-16icon_start:before {
+  content: "\e679";
+}
+
+.icon-a-15icon_car:before {
+  content: "\e67a";
+}
+
+.icon-a-17icon_new:before {
+  content: "\e67b";
+}

@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <!-- 必须的 meta 标签 -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/common.css" rel="stylesheet">
+    <link href="./css/iconfont.css" rel="stylesheet">
+    <link href="./css/register.css" rel="stylesheet">
+    <title>首页</title>
+  </head>
+  <body>
+    <main class="register_view">
+      <div class="register_view_left"></div>
+      <div class="register_view_right">
+        <div class="register_view_right_tooltip">
+          <i class="iconfont icon-a-11return register_view_right_tooltip_icon"></i>
+          <p>Home</p>
+        </div>
+        <div class="register_view_right_main">
+          <h3 class="register_view_right_main_title">Sign up</h3>
+          <div class="register_view_right_main_control">
+            <div class="register_view_right_main_control_tip">
+              <label class="register_view_right_main_control_tip_red">*</label>&nbsp;&nbsp;Please enter E-mail Address
+            </div>
+            <input
+              type="text"
+              class="register_view_right_main_control_value"
+            />
+          </div>
+          <div class="register_view_right_main_control">
+            <div class="register_view_right_main_control_tip">
+              <label class="register_view_right_main_control_tip_red">*</label>&nbsp;&nbsp;Please enter password
+            </div>
+            <input
+              type="text"
+              class="register_view_right_main_control_value"
+            />
+          </div>
+          <div class="register_view_right_main_control">
+            <div class="register_view_right_main_control_tip">
+              <label class="register_view_right_main_control_tip_red">*</label>&nbsp;&nbsp;Please enter confirm password
+            </div>
+            <input
+              type="text"
+              class="register_view_right_main_control_value"
+            />
+          </div>
+          <div class="register_view_right_main_control">
+            <div class="register_view_right_main_control_tip">
+              <label class="register_view_right_main_control_tip_red">*</label>&nbsp;&nbsp;Contact Name
+            </div>
+            <input
+              type="text"
+              class="register_view_right_main_control_value"
+            />
+          </div>
+          <div class="register_view_right_main_control">
+            <div class="register_view_right_main_control_tip">
+              <label class="register_view_right_main_control_tip_red">*</label>&nbsp;&nbsp;Please enter Company Name
+            </div>
+            <input
+              type="text"
+              class="register_view_right_main_control_value"
+            />
+          </div>
+          <div class="register_view_right_main_control" style="margin-bottom: 44px">
+            <div class="register_view_right_main_control_tip">
+              <label class="register_view_right_main_control_tip_red">*</label>&nbsp;&nbsp;Please select country
+            </div>
+            <input
+              type="text"
+              id="country"
+              class="register_view_right_main_control_value select"
+              readonly
+              style="cursor: pointer;"
+            />
+            <i class="iconfont icon-xiangxiajiantou"></i>
+            <div class="register_view_right_main_control_list">
+              <div class="register_view_right_main_control_list_item">Aruba</div>
+              <div class="register_view_right_main_control_list_item">Afghanistan</div>
+              <div class="register_view_right_main_control_list_item">Angola</div>
+              <div class="register_view_right_main_control_list_item">Albania</div>
+              <div class="register_view_right_main_control_list_item">Andorre</div>
+              <div class="register_view_right_main_control_list_item">United Arab Emirates</div>
+            </div>
+          </div>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+            <div class="progress-icon" style="left: 25%;"></div>
+          </div>
+          <div class="register_view_right_main_policy form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+            <label class="form-check-label" for="flexCheckIndeterminate">
+              I agree to the <a>Privacy Policy and Terms of Use</a>.
+            </label>
+          </div>
+          <div class="register_view_right_main_action sign">
+            Sign up
+          </div>
+          <div class="register_view_right_main_action google">
+            Sign in with Goole
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="./js/jquery-3.6.1.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      // $('#header').load('./header.html');
+      // $('#footer').load('./footer.html');
+      $('body').click(function(e){
+        let className = e.target.className;
+        let includeClass = ['register_view_right_main_control_list', 'register_view_right_main_control_list_item'];
+        if (includeClass.indexOf(className) != -1 || e.target.id == 'country') {
+          return;
+        } else {
+          $('.register_view_right_main_control_list').hide();
+        }
+      })
+      $('.select').click(function(){
+        $(this).parent().find('.register_view_right_main_control_list').show();
+      });
+      $('.register_view_right_main_control_list_item').click(function(){
+        let text = $(this).text();
+        $('#country').val(text);
+        $('.register_view_right_main_control_list').hide()
+      })
+		});
+  </script>
+</html>
