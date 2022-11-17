@@ -438,6 +438,8 @@ body {
 }
 .footer_main_others_section_icons {
   display: flex;
+  padding-left: 20px;
+  gap: 20px;
 }
 /* .footer_main_others_section_icons .icon-a-49icon_zhifubao_nor { */
 .footer_main_others_section_icons .iconfont {
