@@ -16,7 +16,7 @@
         <div class="header_container_toolTip_search">
           <div class="header_container_toolTip_search_select">
             Products
-            <i class="iconfont icon-xiangxiajiantou"></i>
+            <i class="iconfont">&#xe671;</i>
           </div>
           <div class="header_container_toolTip_search_main">
             <input
@@ -37,6 +37,82 @@
               >
                 <path d="M470.65088 0c252.49792 0.04096 457.15456 204.77952 457.1136 457.27744a457.158656 457.158656 0 0 1-110.22336 297.63584l176.41472 176.35328c21.504 20.48 22.34368 54.51776 1.86368 76.02176-20.48 21.504-54.51776 22.34368-76.02176 1.86368-0.63488-0.59392-1.24928-1.2288-1.86368-1.86368l-179.54816-179.54816c-204.65664 147.90656-490.45504 101.90848-638.3616-102.74816S-1.88416 234.55744 202.77248 86.65088A457.119744 457.119744 0 0 1 470.65088 0z m0 107.56096c-193.06496 0-349.57312 156.50816-349.57312 349.57312S277.58592 806.7072 470.65088 806.7072 820.224 650.19904 820.224 457.13408 663.71584 107.56096 470.65088 107.56096z" fill="#FFFFFF" p-id="2419"></path>
                 </svg>
+            </div>
+          </div>
+          <div class="header_container_toolTip_search_list">
+            <div class="header_container_toolTip_search_list_main" id="search">
+              <div class="search_view">
+                <div class="search_view_title">
+                  <i class="iconfont" style="color: #8A9197;">&#xe678;</i>Search Products
+                </div>
+                <div class="search_view_list">
+                  <div class="search_view_list_item">758</div>
+                  <div class="search_view_list_item">758</div>
+                  <div class="search_view_list_item">758</div>
+                </div>
+              </div>
+              <div class="content">
+                <div class="content_title">
+                  <i class="iconfont" style="color: #8A9197;">&#xe678;</i>Popular Search
+                </div>
+                <div class="content_list">
+                  <div class="content_list_item">BMI270</div>
+                  <div class="content_list_item">BMI270</div>
+                  <div class="content_list_item">BMI270</div>
+                  <div class="content_list_item">BMI270</div>
+                  <div class="content_list_item">BMI270</div>
+                  <div class="content_list_item">BMI270</div>
+                  <div class="content_list_item">BMI270</div>
+                  <div class="content_list_item">BMI270</div>
+                  <div class="content_list_item">BMI270</div>
+                </div>
+                <div class="content_title">
+                  <i class="iconfont" style="color: #8A9197;">&#xe677;</i>Recommend Search
+                </div>
+                <div class="content_list">
+                  <div class="content_list_item">BMI270</div>
+                  <div class="content_list_item">BMI270</div>
+                  <div class="content_list_item">BMI270</div>
+                  <div class="content_list_item">BMI270</div>
+                  <div class="content_list_item">BMI270</div>
+                  <div class="content_list_item">BMI270</div>
+                  <div class="content_list_item">BMI270</div>
+                  <div class="content_list_item">BMI270</div>
+                  <div class="content_list_item">BMI270</div>
+                </div>
+              </div>
+            </div>
+            <div class="header_container_toolTip_search_list_main" id="product">
+              <div class="content">
+                <div class="content_title">
+                  <i class="iconfont" style="color: #8A9197;">&#xe678;</i>Popular Search
+                </div>
+                <div class="content_list">
+                  <div class="content_list_item">BMI270</div>
+                  <div class="content_list_item">BMI270</div>
+                  <div class="content_list_item">BMI270</div>
+                  <div class="content_list_item">BMI270</div>
+                  <div class="content_list_item">BMI270</div>
+                  <div class="content_list_item">BMI270</div>
+                  <div class="content_list_item">BMI270</div>
+                  <div class="content_list_item">BMI270</div>
+                  <div class="content_list_item">BMI270</div>
+                </div>
+                <div class="content_title">
+                  <i class="iconfont" style="color: #8A9197;">&#xe677;</i>Recommend Search
+                </div>
+                <div class="content_list">
+                  <div class="content_list_item">BMI270</div>
+                  <div class="content_list_item">BMI270</div>
+                  <div class="content_list_item">BMI270</div>
+                  <div class="content_list_item">BMI270</div>
+                  <div class="content_list_item">BMI270</div>
+                  <div class="content_list_item">BMI270</div>
+                  <div class="content_list_item">BMI270</div>
+                  <div class="content_list_item">BMI270</div>
+                  <div class="content_list_item">BMI270</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -136,5 +212,39 @@
         }
       });
     }
+    $('.header_container_toolTip_search_main_keyword').bind("input propertychange",function(event){
+       console.log($(".header_container_toolTip_search_main_keyword").val())
+       let val = $(".header_container_toolTip_search_main_keyword").val();
+       if (val) {
+        $('.header_container_toolTip_search_list').show();
+       } else {
+        $('.header_container_toolTip_search_list').hide();
+       }
+      $('.header_container_toolTip_search_list_main').hide();
+      $('#search').show();
+    });
+    $('.header_container_toolTip_search_select').click(function() {
+      $('.header_container_toolTip_search_list').show();
+      $('.header_container_toolTip_search_list_main').hide();
+      $('#product').show();
+    });
+    $('body').click(function(event){
+      console.log('event', event);
+      let className = event.target.className;
+      if (className.indexOf('header_container_toolTip_search') != -1) {
+        return;
+      }
+      if (className.indexOf('content') == -1) {
+        $('.header_container_toolTip_search_list').hide();
+      }
+    });
+    $('.content_list_item').click(function(){
+      $(".header_container_toolTip_search_main_keyword").val($(this).text());
+      $('.header_container_toolTip_search_list').hide();
+    })
+    $('.search_view_list_item').click(function(){
+      $(".header_container_toolTip_search_main_keyword").val($(this).text());
+      $('.header_container_toolTip_search_list').hide();
+    })
   });
 </script>

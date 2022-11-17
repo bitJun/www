@@ -1,9 +1,9 @@
 /* CDN 服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
 @font-face {
   font-family: 'iconfont';  /* Project id 3757879 */
-  src: url('//at.alicdn.com/t/c/font_3757879_1rqlvnxzg2j.woff2?t=1668003206822') format('woff2'),
-       url('//at.alicdn.com/t/c/font_3757879_1rqlvnxzg2j.woff?t=1668003206822') format('woff'),
-       url('//at.alicdn.com/t/c/font_3757879_1rqlvnxzg2j.ttf?t=1668003206822') format('truetype');
+  src: url('//at.alicdn.com/t/c/font_3757879_hu5a7qgs5u.woff2?t=1668672433773') format('woff2'),
+       url('//at.alicdn.com/t/c/font_3757879_hu5a7qgs5u.woff?t=1668672433773') format('woff'),
+       url('//at.alicdn.com/t/c/font_3757879_hu5a7qgs5u.ttf?t=1668672433773') format('truetype');
 }
 .iconfont{
   font-family: "iconfont" !important;
@@ -63,6 +63,22 @@ body {
   border: 1px solid #C7CDD2;
   display: flex;
   margin-right: 114px;
+  position: relative;
+}
+.header_container_toolTip_search_list {
+  position: absolute;
+  display: none;
+  left: 0;
+  top: 42px;
+  width: 740px;
+  height: 406px;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 24px 1px rgba(52,74,109,0.2);
+  border-radius: 8px 8px 8px 8px;
+  opacity: 1;
+  padding: 30px 0;
+  box-sizing: border-box;
+  overflow: scroll;
 }
 .header_container_toolTip_search_select {
   width: 189px;
@@ -450,4 +466,65 @@ body {
 .container_view {
   width: 1440px;
   margin: 0 auto;
+}
+.content {
+  padding: 0 30px;
+}
+.search_view {
+  padding-bottom: 31px;
+  margin-bottom: 30px;
+  border-bottom: 1px dashed #C7CDD2;
+}
+.search_view_title,
+.content_title {
+  height: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-family: Source Han Sans SC-Bold, Source Han Sans SC;
+  font-weight: bold;
+  color: #292A2B;
+  margin-bottom: 28px;
+}
+.search_view_title {
+  padding-left: 30px;
+}
+.search_view_title .iconfont,
+.content_title .iconfont {
+  margin-right: 10px;
+}
+.content_list {
+  margin-bottom: 34px;
+  padding-left: 22px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.content_list_item {
+  margin-bottom: 24px;
+  margin-right: 41px;
+  height: 20px;
+  font-size: 14px;
+  font-family: Source Han Sans SC-Regular, Source Han Sans SC;
+  font-weight: 400;
+  color: #8A9197;
+  line-height: 20px;
+  cursor: pointer;
+}
+.search_view {
+
+}
+.search_view_list {
+  margin-bottom: 34px;
+  padding-left: 51px;
+}
+.search_view_list_item {
+  margin-bottom: 24px;
+  margin-right: 41px;
+  height: 20px;
+  font-size: 14px;
+  font-family: Source Han Sans SC-Regular, Source Han Sans SC;
+  font-weight: 400;
+  color: #8A9197;
+  line-height: 20px;
+  cursor: pointer;
 }
