@@ -57,6 +57,7 @@
 .center_view_main_filter_item .iconfont {
   color: #DE3E46;
   margin-right: 10px;
+  cursor: pointer;
 }
 .center_view_main_filter_item_value {
   width: 200px;
@@ -229,4 +230,94 @@
   color: #0665FF;
   cursor: pointer;
   text-decoration: underline;
+}
+.modal_view {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  width: 600px;
+  height: 240px;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 24px 1px rgba(52,74,109,0.32);
+  border-radius: 8px 8px 8px 8px;
+  opacity: 1;
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+.modal_view_title {
+  height: 24px;
+  line-height: 24px;
+  font-size: 16px;
+  font-family: Source Han Sans SC-Medium, Source Han Sans SC;
+  font-weight: 500;
+  color: #292A2B;
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 25px;
+}
+.modal_view_title::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: '';
+  width: 4px;
+  height: 24px;
+  background: #DE3E46;
+}
+.modal_view_control {
+  display: flex;
+  align-items: center;
+  height: 36px;
+  margin-bottom: 40px;
+}
+.modal_view_control_label {
+  width: 188px;
+  text-indent: 40px;
+  font-size: 14px;
+  font-family: Source Han Sans SC-Normal, Source Han Sans SC;
+  font-weight: 400;
+  color: #292A2B;
+}
+.modal_view_control_value {
+  width: 372px;
+  height: 36px;
+  line-height: 36px;
+  background: #FFFFFF;
+  border-radius: 18px 18px 18px 18px;
+  opacity: 1;
+  border: 1px solid #C7CDD2;
+  padding-left: 20px;
+  font-size: 14px;
+  font-family: Source Han Sans SC-Medium, Source Han Sans SC;
+  font-weight: 500;
+  color: #292A2B;
+}
+.modal_view_action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.modal_view_action_item {
+  width: 112px;
+  height: 40px;
+  border-radius: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-family: Source Han Sans SC-Bold, Source Han Sans SC;
+  font-weight: bold;
+  cursor: pointer;
+}
+.modal_view_action_item.cancel {
+  background: #E8EAEE;
+  color: #292A2B;
+}
+.modal_view_action_item.finish {
+  background: #DE3E46;
+  color: #ffffff;
 }

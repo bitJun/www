@@ -8,270 +8,277 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">    
     <link href="./css/common.css" rel="stylesheet">
     <link href="./css/express.css" rel="stylesheet">
-    <title>首页</title>
+    <title>Express</title>
   </head>
   <body>
     <div id="header"></div>
     <div>
       <div class="container_view">
         <div class="express_view_section">
-          <div class="express_view_section_classify">
-            <div class="express_view_section_classify_item">ALL Products</div>
-            <div class="express_view_section_classify_item">Integrated Circuits (ICs)</div>
-            <div class="express_view_section_classify_item">Connectors</div>
-            <div class="express_view_section_classify_item">Discrete Semiconductors</div>
-            <div class="express_view_section_classify_item">Capacitors</div>
-            <div class="express_view_section_classify_item">Sensors</div>
-            <div class="express_view_section_classify_item">Resistors</div>
-            <div class="express_view_section_classify_item last">Isolators</div>
-            <div class="express_view_section_classify_item viewAll">View All</div>
+          <div class="express_view_section_left">
+            <h3 class="express_view_section_left_title">Manufacturer</h3>
+            <div class="express_view_section_left_list">
+              <div class="express_view_section_left_list_item">MAXIM</div>
+              <div class="express_view_section_left_list_item">MAXIM</div>
+              <div class="express_view_section_left_list_item">MAXIM</div>
+              <div class="express_view_section_left_list_item">MAXIM</div>
+              <div class="express_view_section_left_list_item">MAXIM</div>
+              <div class="express_view_section_left_list_item">MAXIM</div>
+              <div class="express_view_section_left_list_item">MAXIM</div>
+              <div class="express_view_section_left_list_item">MAXIM</div>
+            </div>
           </div>
-          <div class="express_view_section_other">
-            <div class="express_view_section_other_banner">
-              <div class="swiper">
+          <div class="express_view_section_right">
+            <div class="express_view_section_nav">
+              <div class="express_view_section_nav_item">
+                Area
+                <i class="iconfont">&#xe671;</i>
+              </div>
+              <div class="express_view_section_nav_item">
+                Upload date
+                <i class="iconfont">&#xe671;</i>
+              </div>
+            </div>
+            <div class="express_view_section_content">
+              <div class="express_view_section_content_swiper swiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <img
-                        src="./images/banner.png"
-                      />
-                      <div class="express_view_section_other_banner_container">
-                        <h4 class="express_view_section_other_banner_container_number">10.00.000</h4>
-                        <p class="express_view_section_other_banner_container_name">SKU TO SEARCH</p>
-                        <div class="express_view_section_other_banner_container_action">
-                          <img
-                            src="./images/search.png"
-                            class="express_view_section_other_banner_container_action_icon"
-                          />
-                          NEW And Original Semiconductor Parts
-                        </div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <img
-                        src="./images/banner.png"
-                      />
-                      <div class="express_view_section_other_banner_container">
-                        <h4 class="express_view_section_other_banner_container_number">10.00.000</h4>
-                        <p class="express_view_section_other_banner_container_name">SKU TO SEARCH</p>
-                        <div class="express_view_section_other_banner_container_action">
-                          <img
-                            src="./images/search.png"
-                            class="express_view_section_other_banner_container_action_icon"
-                          />
-                          NEW And Original Semiconductor Parts
-                        </div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <img
-                        src="./images/banner.png"
-                      />
-                      <div class="express_view_section_other_banner_container">
-                        <h4 class="express_view_section_other_banner_container_number">10.00.000</h4>
-                        <p class="express_view_section_other_banner_container_name">SKU TO SEARCH</p>
-                        <div class="express_view_section_other_banner_container_action">
-                          <img
-                            src="./images/search.png"
-                            class="express_view_section_other_banner_container_action_icon"
-                          />
-                          NEW And Original Semiconductor Parts
-                        </div>
-                      </div>
-                    </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="./images/banner.png"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="./images/banner.png"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="./images/banner.png"
+                    />
+                  </div>
                 </div>
                 <!-- 如果需要分页器 -->
                 <div class="swiper-pagination"></div>
-            </div>
-            </div>
-            <div class="express_view_section_other_order">
-              <h3 class="express_view_section_other_order_title">Real time order</h3>
-              <div class="express_view_section_other_order_thead">
-                <div class="express_view_section_other_order_thead_item orderName">Customer Name</div>
-                <div class="express_view_section_other_order_thead_item orderNo">Order No.</div>
-                <div class="express_view_section_other_order_thead_item orderAmmount">Order amount</div>
-                <div class="express_view_section_other_order_thead_item orderTime">Order time</div>
-                <div class="express_view_section_other_order_thead_item orderStatus">Order Status</div>
-              </div>
-              <div class="express_view_section_other_order_list">
-                <div class="express_view_section_other_order_td">
-                  <div class="express_view_section_other_order_td_item orderName">Mr.Li**</div>
-                  <div class="express_view_section_other_order_td_item orderNo">50**55</div>
-                  <div class="express_view_section_other_order_td_item orderAmmount">＄1036.00</div>
-                  <div class="express_view_section_other_order_td_item orderTime">2 min ago</div>
-                  <div class="express_view_section_other_order_td_item orderStatus">Unpaid</div>
-                </div>
-                <div class="express_view_section_other_order_td">
-                  <div class="express_view_section_other_order_td_item orderName">Mr.Li**</div>
-                  <div class="express_view_section_other_order_td_item orderNo">50**55</div>
-                  <div class="express_view_section_other_order_td_item orderAmmount">＄1036.00</div>
-                  <div class="express_view_section_other_order_td_item orderTime">2 min ago</div>
-                  <div class="express_view_section_other_order_td_item orderStatus">Unpaid</div>
-                </div>
-                <div class="express_view_section_other_order_td">
-                  <div class="express_view_section_other_order_td_item orderName">Mr.Li**</div>
-                  <div class="express_view_section_other_order_td_item orderNo">50**55</div>
-                  <div class="express_view_section_other_order_td_item orderAmmount">＄1036.00</div>
-                  <div class="express_view_section_other_order_td_item orderTime">2 min ago</div>
-                  <div class="express_view_section_other_order_td_item orderStatus">Unpaid</div>
-                </div>
-                <div class="express_view_section_other_order_td">
-                  <div class="express_view_section_other_order_td_item orderName">Mr.Li**</div>
-                  <div class="express_view_section_other_order_td_item orderNo">50**55</div>
-                  <div class="express_view_section_other_order_td_item orderAmmount">＄1036.00</div>
-                  <div class="express_view_section_other_order_td_item orderTime">2 min ago</div>
-                  <div class="express_view_section_other_order_td_item orderStatus">Unpaid</div>
-                </div>
-                <div class="express_view_section_other_order_td">
-                  <div class="express_view_section_other_order_td_item orderName">Mr.Li**</div>
-                  <div class="express_view_section_other_order_td_item orderNo">50**55</div>
-                  <div class="express_view_section_other_order_td_item orderAmmount">＄1036.00</div>
-                  <div class="express_view_section_other_order_td_item orderTime">2 min ago</div>
-                  <div class="express_view_section_other_order_td_item orderStatus">Unpaid</div>
-                </div>
-                <div class="express_view_section_other_order_td">
-                  <div class="express_view_section_other_order_td_item orderName">Mr.Li**</div>
-                  <div class="express_view_section_other_order_td_item orderNo">50**55</div>
-                  <div class="express_view_section_other_order_td_item orderAmmount">＄1036.00</div>
-                  <div class="express_view_section_other_order_td_item orderTime">2 min ago</div>
-                  <div class="express_view_section_other_order_td_item orderStatus blue">Dispatch</div>
-                </div>
-                <div class="express_view_section_other_order_td">
-                  <div class="express_view_section_other_order_td_item orderName">Mr.Li**</div>
-                  <div class="express_view_section_other_order_td_item orderNo">50**55</div>
-                  <div class="express_view_section_other_order_td_item orderAmmount">＄1036.00</div>
-                  <div class="express_view_section_other_order_td_item orderTime">2 min ago</div>
-                  <div class="express_view_section_other_order_td_item orderStatus">Unpaid</div>
-                </div>
-                <div class="express_view_section_other_order_td">
-                  <div class="express_view_section_other_order_td_item orderName">Mr.Li**</div>
-                  <div class="express_view_section_other_order_td_item orderNo">50**55</div>
-                  <div class="express_view_section_other_order_td_item orderAmmount">＄1036.00</div>
-                  <div class="express_view_section_other_order_td_item orderTime">2 min ago</div>
-                  <div class="express_view_section_other_order_td_item orderStatus blue">Dispatch</div>
-                </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="express_view_sections">
-          <div class="express_view_sections_item">
-            <img
-              class="express_view_sections_item_icon card"
-              src="./images/card.png"
-            />
-            <p class="express_view_sections_item_text">Help you to save your cost and time.</p>
-          </div>
-          <div class="express_view_sections_item">
-            <img
-              class="express_view_sections_item_icon good"
-              src="./images/good.png"
-            />
-            <p class="express_view_sections_item_text">Reliable package for your goods.</p>
-          </div>
-          <div class="express_view_sections_item">
-            <img
-              class="express_view_sections_item_icon car"
-              src="./images/car.png"
-            />
-            <p class="express_view_sections_item_text">Fast Reliable Delivery to save time.</p>
-          </div>
-          <div class="express_view_sections_item">
-            <img
-              class="express_view_sections_item_icon start"
-              src="./images/start.png"
-            />
-            <p class="express_view_sections_item_text">Quality First premium after-sale service.</p>
           </div>
         </div>
         <h3 class="express_view_title">
-          <img
-            class="express_view_title_icon"
-            src="./images/new.png"
-          />
-          Latest Stock
+          <i class="iconfont">&#xe678;</i>
+          Hot sales
         </h3>
-        <div class="express_view_container">
-          <div class="express_view_container_banner">
-            <img
-              src="./images/ad.png"
-              class="express_view_container_banner_img"
-            />
-            <div class="express_view_container_banner_desc">
-              Original Factory <span>Inventory</span>
-            </div>
-          </div>
-          <div class="express_view_container_content">
-            <table style="width: 100%;">
-              <thead class="express_view_container_content_thead">
-                <td style="width: 220px; text-indent: 40px;">Warehouse</td>
-                <td style="width: 191px;">Model code</td>
-                <td style="width: 180px;">Product Type</td>
-                <td style="width: 122px;">Brand</td>
-                <td style="width: 150px;">Batch No.</td>
-                <td style="width: 177px;">Inventory Quantity</td>
-              </thead>
-              <tbody style="padding: 15px 0;">
-                <tr class="express_view_container_content_tr">
-                  <td style="width: 220px; text-indent: 40px">08-Dongguan</td>
-                  <td style="width: 191px;">SSHL-002T-PO.2</td>
-                  <td style="width: 180px;">C32-Terminal</td>
-                  <td style="width: 122px;">JST</td>
-                  <td style="width: 150px;">22106</td>
-                  <td style="width: 177px;">280,000</td>
-                </tr>
-                <tr class="express_view_container_content_tr">
-                  <td style="width: 220px; text-indent: 40px">08-Dongguan</td>
-                  <td style="width: 191px;">SSHL-002T-PO.2</td>
-                  <td style="width: 180px;">C32-Terminal</td>
-                  <td style="width: 122px;">JST</td>
-                  <td style="width: 150px;">22106</td>
-                  <td style="width: 177px;">280,000</td>
-                </tr>
-                <tr class="express_view_container_content_tr">
-                  <td style="width: 220px; text-indent: 40px">08-Dongguan</td>
-                  <td style="width: 191px;">SSHL-002T-PO.2</td>
-                  <td style="width: 180px;">C32-Terminal</td>
-                  <td style="width: 122px;">JST</td>
-                  <td style="width: 150px;">22106</td>
-                  <td style="width: 177px;">280,000</td>
-                </tr>
-                <tr class="express_view_container_content_tr">
-                  <td style="width: 220px; text-indent: 40px">08-Dongguan</td>
-                  <td style="width: 191px;">SSHL-002T-PO.2</td>
-                  <td style="width: 180px;">C32-Terminal</td>
-                  <td style="width: 122px;">JST</td>
-                  <td style="width: 150px;">22106</td>
-                  <td style="width: 177px;">280,000</td>
-                </tr>
-                <tr class="express_view_container_content_tr">
-                  <td style="width: 220px; text-indent: 40px">08-Dongguan</td>
-                  <td style="width: 191px;">SSHL-002T-PO.2</td>
-                  <td style="width: 180px;">C32-Terminal</td>
-                  <td style="width: 122px;">JST</td>
-                  <td style="width: 150px;">22106</td>
-                  <td style="width: 177px;">280,000</td>
-                </tr>
-                <tr class="express_view_container_content_tr">
-                  <td style="width: 220px; text-indent: 40px">08-Dongguan</td>
-                  <td style="width: 191px;">SSHL-002T-PO.2</td>
-                  <td style="width: 180px;">C32-Terminal</td>
-                  <td style="width: 122px;">JST</td>
-                  <td style="width: 150px;">22106</td>
-                  <td style="width: 177px;">280,000</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+        <div class="express_view_list">
+          <table style="width: 100%;">
+            <thead class="express_view_thead">
+              <td style="width: 231px; text-indent: 40px;">Part Number</td>
+              <td style="width: 174px;">MNF</td>
+              <td style="width: 159px;">QTY</td>
+              <td style="width: 152px;">SPQ</td>
+              <td style="width: 288px;">Description </td>
+              <td style="width: 151px;">LT</td>
+              <td style="width: 147px;">DC</td>
+              <td style="width: 138px;">Sell, USD</td>
+            </thead>
+            <tbody style="padding: 15px 0;">
+              <tr class="express_view_tr">
+                <td style="width: 231px; text-indent: 40px;">Warehouse</td>
+                <td style="width: 174px;">Model code</td>
+                <td style="width: 159px;">Product Type</td>
+                <td style="width: 152px;">Brand</td>
+                <td style="width: 288px;">
+                  <a
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    data-bs-title="LGA 12/World tiniest Time-of-Flight (ToF) laser ranging sensor"
+                    style="color: #2189FF;text-decoration: underline;margin-bottom: 0;cursor: pointer;"
+                  >
+                    Batch No.
+                  </a>
+                </td>
+                <td style="width: 151px;">Inventory Quantity</td>
+                <td style="width: 147px;">Inventory Quantity</td>
+                <td style="width: 138px;">Inventory Quantity</td>
+              </tr>
+              <tr class="express_view_tr">
+                <td style="width: 231px; text-indent: 40px;">Warehouse</td>
+                <td style="width: 174px;">Model code</td>
+                <td style="width: 159px;">Product Type</td>
+                <td style="width: 152px;">Brand</td>
+                <td style="width: 288px;">
+                  <a
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    data-bs-title="LGA 12/World tiniest Time-of-Flight (ToF) laser ranging sensor"
+                    style="color: #2189FF;text-decoration: underline;margin-bottom: 0;cursor: pointer;"
+                  >
+                    Batch No.
+                  </a>
+                </td>
+                <td style="width: 151px;">Inventory Quantity</td>
+                <td style="width: 147px;">Inventory Quantity</td>
+                <td style="width: 138px;">Inventory Quantity</td>
+              </tr>
+              <tr class="express_view_tr">
+                <td style="width: 231px; text-indent: 40px;">Warehouse</td>
+                <td style="width: 174px;">Model code</td>
+                <td style="width: 159px;">Product Type</td>
+                <td style="width: 152px;">Brand</td>
+                <td style="width: 288px;">
+                  <a
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    data-bs-title="LGA 12/World tiniest Time-of-Flight (ToF) laser ranging sensor"
+                    style="color: #2189FF;text-decoration: underline;margin-bottom: 0;cursor: pointer;"
+                  >
+                    Batch No.
+                  </a>
+                </td>
+                <td style="width: 151px;">Inventory Quantity</td>
+                <td style="width: 147px;">Inventory Quantity</td>
+                <td style="width: 138px;">Inventory Quantity</td>
+              </tr>
+              <tr class="express_view_tr">
+                <td style="width: 231px; text-indent: 40px;">Warehouse</td>
+                <td style="width: 174px;">Model code</td>
+                <td style="width: 159px;">Product Type</td>
+                <td style="width: 152px;">Brand</td>
+                <td style="width: 288px;">
+                  <a
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    data-bs-title="LGA 12/World tiniest Time-of-Flight (ToF) laser ranging sensor"
+                    style="color: #2189FF;text-decoration: underline;margin-bottom: 0;cursor: pointer;"
+                  >
+                    Batch No.
+                  </a>
+                </td>
+                <td style="width: 151px;">Inventory Quantity</td>
+                <td style="width: 147px;">Inventory Quantity</td>
+                <td style="width: 138px;">Inventory Quantity</td>
+              </tr>
+              <tr class="express_view_tr">
+                <td style="width: 231px; text-indent: 40px;">Warehouse</td>
+                <td style="width: 174px;">Model code</td>
+                <td style="width: 159px;">Product Type</td>
+                <td style="width: 152px;">Brand</td>
+                <td style="width: 288px;">
+                  <a
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    data-bs-title="LGA 12/World tiniest Time-of-Flight (ToF) laser ranging sensor"
+                    style="color: #2189FF;text-decoration: underline;margin-bottom: 0;cursor: pointer;"
+                  >
+                    Batch No.
+                  </a>
+                </td>
+                <td style="width: 151px;">Inventory Quantity</td>
+                <td style="width: 147px;">Inventory Quantity</td>
+                <td style="width: 138px;">Inventory Quantity</td>
+              </tr>
+              <tr class="express_view_tr">
+                <td style="width: 231px; text-indent: 40px;">Warehouse</td>
+                <td style="width: 174px;">Model code</td>
+                <td style="width: 159px;">Product Type</td>
+                <td style="width: 152px;">Brand</td>
+                <td style="width: 288px;">
+                  <a
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    data-bs-title="LGA 12/World tiniest Time-of-Flight (ToF) laser ranging sensor"
+                    style="color: #2189FF;text-decoration: underline;margin-bottom: 0;cursor: pointer;"
+                  >
+                    Batch No.
+                  </a>
+                </td>
+                <td style="width: 151px;">Inventory Quantity</td>
+                <td style="width: 147px;">Inventory Quantity</td>
+                <td style="width: 138px;">Inventory Quantity</td>
+              </tr>
+              <tr class="express_view_tr">
+                <td style="width: 231px; text-indent: 40px;">Warehouse</td>
+                <td style="width: 174px;">Model code</td>
+                <td style="width: 159px;">Product Type</td>
+                <td style="width: 152px;">Brand</td>
+                <td style="width: 288px;">
+                  <a
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    data-bs-title="LGA 12/World tiniest Time-of-Flight (ToF) laser ranging sensor"
+                    style="color: #2189FF;text-decoration: underline;margin-bottom: 0;cursor: pointer;"
+                  >
+                    Batch No.
+                  </a>
+                </td>
+                <td style="width: 151px;">Inventory Quantity</td>
+                <td style="width: 147px;">Inventory Quantity</td>
+                <td style="width: 138px;">Inventory Quantity</td>
+              </tr>
+              <tr class="express_view_tr">
+                <td style="width: 231px; text-indent: 40px;">Warehouse</td>
+                <td style="width: 174px;">Model code</td>
+                <td style="width: 159px;">Product Type</td>
+                <td style="width: 152px;">Brand</td>
+                <td style="width: 288px;">
+                  <a
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    data-bs-title="LGA 12/World tiniest Time-of-Flight (ToF) laser ranging sensor"
+                    style="color: #2189FF;text-decoration: underline;margin-bottom: 0;cursor: pointer;"
+                  >
+                    Batch No.
+                  </a>
+                </td>
+                <td style="width: 151px;">Inventory Quantity</td>
+                <td style="width: 147px;">Inventory Quantity</td>
+                <td style="width: 138px;">Inventory Quantity</td>
+              </tr>
+              <tr class="express_view_tr">
+                <td style="width: 231px; text-indent: 40px;">Warehouse</td>
+                <td style="width: 174px;">Model code</td>
+                <td style="width: 159px;">Product Type</td>
+                <td style="width: 152px;">Brand</td>
+                <td style="width: 288px;">
+                  <a
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    data-bs-title="LGA 12/World tiniest Time-of-Flight (ToF) laser ranging sensor"
+                    style="color: #2189FF;text-decoration: underline;margin-bottom: 0;cursor: pointer;"
+                  >
+                    Batch No.
+                  </a>
+                </td>
+                <td style="width: 151px;">Inventory Quantity</td>
+                <td style="width: 147px;">Inventory Quantity</td>
+                <td style="width: 138px;">Inventory Quantity</td>
+              </tr>
+              <tr class="express_view_tr">
+                <td style="width: 231px; text-indent: 40px;">Warehouse</td>
+                <td style="width: 174px;">Model code</td>
+                <td style="width: 159px;">Product Type</td>
+                <td style="width: 152px;">Brand</td>
+                <td style="width: 288px;">
+                  <a
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    data-bs-title="LGA 12/World tiniest Time-of-Flight (ToF) laser ranging sensor"
+                    style="color: #2189FF;text-decoration: underline;margin-bottom: 0;cursor: pointer;"
+                  >
+                    Batch No.
+                  </a>
+                </td>
+                <td style="width: 151px;">Inventory Quantity</td>
+                <td style="width: 147px;">Inventory Quantity</td>
+                <td style="width: 138px;">Inventory Quantity</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
       <div class="express_view_crosschips">
         <div class="container_view">
-          <h3 class="express_view_crosschips_title">Your IC Partner - Crosschips</h3>
-          <p class="express_view_crosschips_desc">Quality ics. Extraordinary savings. Satisfaction guaranteed</p>
-          <p class="express_view_crosschips_content">800000 Business Partners Will Cooperate With Crosschips Soon</p>
-          <div class="express_view_crosschips_title_list">
-            
-          </div>
+          <h3 class="express_view_crosschips_title">We bring Extra Values to your excess stock</h3>
+          <p class="express_view_crosschips_desc">100000 business partners will cooperate with Crosschips </p>
         </div>
       </div>
     </div>
@@ -292,7 +299,8 @@
           el: '.swiper-pagination',
           clickable :true,
         }
-      })        
+      });  
+      $('[data-toggle="tooltip"]').tooltip();   
 		});
   </script>
 </html>
