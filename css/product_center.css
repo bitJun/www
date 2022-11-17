@@ -1,0 +1,232 @@
+.center_view {
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
+.center_view_main {
+  width: 1440px;
+  height: 1050px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  opacity: 1;
+  padding: 34px 40px 60px 40px;
+  box-sizing: border-box;
+}
+.center_view_main_filter {
+  display: flex;
+  height: 36px;
+  gap: 50px;
+  margin-bottom: 30px;
+}
+.center_view_main_filter_item {
+  display: flex;
+  height: 36px;
+  align-items: center;
+  font-size: 16px;
+  font-family: Source Han Sans SC-Normal, Source Han Sans SC;
+  font-weight: 400;
+  color: #292A2B;
+  position: relative;
+}
+.center_view_main_filter_item_select {
+  display: none;
+  position: absolute;
+  box-sizing: border-box;
+  right: 0;
+  top: 42px;
+  padding: 30px;
+  width: 200px;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 24px 1px rgba(52,74,109,0.32);
+  border-radius: 8px 8px 8px 8px;
+  opacity: 1;
+  z-index: 99;
+  max-height: 874px;
+}
+.center_view_main_filter_item_select_item {
+  height: 20px;
+  font-size: 14px;
+  font-family: Source Han Sans SC-Medium, Source Han Sans SC;
+  font-weight: 500;
+  color: #292A2B;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+.center_view_main_filter_item_select_item:last-child {
+  margin-bottom: 0;
+}
+.center_view_main_filter_item .iconfont {
+  color: #DE3E46;
+  margin-right: 10px;
+}
+.center_view_main_filter_item_value {
+  width: 200px;
+  height: 36px;
+  background: #FFFFFF;
+  border-radius: 18px;
+  opacity: 1;
+  border: 1px solid #C7CDD2;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.center_view_main_title {
+  width: 1360px;
+  height: 40px;
+  background: #F3F5F8;
+  border-radius: 0px;
+  opacity: 1;
+  position: relative;
+  padding-left: 16px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.center_view_main_title::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 24px;
+  background: #DE3E46;
+  border-radius: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+.center_view_main_list {
+  padding: 0 16px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+.center_view_main_list_item {
+  height: 24px;
+  font-size: 16px;
+  font-family: Source Han Sans SC-Normal, Source Han Sans SC;
+  font-weight: 400;
+  color: #53575A;
+  line-height: 24px;
+  width: 25%;
+  margin-bottom: 20px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.center_view_main_list_item.active,
+.center_view_main_list_item:hover {
+  color: #DE3E46;
+}
+.center_view_main_section {
+  margin-bottom: 34px;
+}
+.center_view_main_section_tab {
+  width: 200px;
+  height: 46px;
+  border-radius: 18px 18px 0px 0px;
+  opacity: 1;
+  font-size: 16px;
+  font-family: Source Han Sans SC-Bold, Source Han Sans SC;
+  font-weight: bold;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: underline;
+}
+.center_view_main_section_tab.redbg {
+  background: #DE3E46;
+}
+.center_view_main_section_tab.bluebg {
+  background: #2189FF;
+}
+.center_view_main_section_table {
+  box-shadow: 0px 8px 24px 1px rgba(52,74,109,0.1);
+  border-radius: 0px 8px 8px 8px;
+  opacity: 1;
+  border: 1px solid #C7CDD2;
+}
+.center_view_main_section_table_thead {
+  display: flex;
+  height: 64px;
+  background: #F3F5F8;
+  border-radius: 0px 8px 0px 0px;
+  opacity: 1;
+  align-items: center;
+}
+.center_view_main_section_table_thead_item {
+  font-size: 16px;
+  font-family: Source Han Sans SC-Normal, Source Han Sans SC;
+  font-weight: 400;
+  color: #8A9197;
+}
+.image {
+  width: 186px;
+  box-sizing: border-box;
+  padding-left: 40px;
+}
+.part {
+  width: 203px;
+}
+.brand {
+  width: 108px;
+}
+.datecode {
+  width: 130px;
+}
+.package {
+  width: 121px;
+}
+.description {
+  width: 172px;
+}
+.stock {
+  width: 131px;
+}
+.lead {
+  width: 157px;
+}
+.center_view_main_section_table_tr {
+  display: flex;
+}
+.center_view_main_section_table_tr_item {
+  padding: 20px 0 40px 0;
+  font-size: 16px;
+  font-family: Source Han Sans SC-Regular, Source Han Sans SC;
+  font-weight: 400;
+  color: #292A2B;
+}
+.center_view_main_section_table_tr_item.image {
+  box-sizing: border-box;
+  padding-left: 40px;
+}
+.center_view_main_section_table_tr_item.single {
+  padding-top: 32px;
+}
+.center_view_main_section_table_tr_item.image img {
+  width: 96px;
+  height: 96px;
+  border-radius: 8px;
+}
+.center_view_main_section_table_tr_item_action {
+  width: 112px;
+  height: 40px;
+  background: #DE3E46;
+  border-radius: 23px 23px 23px 23px;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-family: Source Han Sans SC-Bold, Source Han Sans SC;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.center_view_main_section_table_tr_item.description {
+  position: relative;
+  font-size: 16px;
+  font-family: Source Han Sans SC-Regular, Source Han Sans SC;
+  font-weight: 400;
+  color: #0665FF;
+  cursor: pointer;
+  text-decoration: underline;
+}

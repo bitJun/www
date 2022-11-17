@@ -50,8 +50,28 @@
               class="header_container_toolTip_actions_user_icon"
               src="./images/account.png"
             />
-            <a class="header_container_toolTip_actions_user_item signIn">Sign In</a>
-            <a class="header_container_toolTip_actions_user_item signUp">Sign Up</a>
+            <div class="header_container_toolTip_actions_user_item signIn">
+              Sign In
+            </div>
+            <div class="header_container_toolTip_actions_user_item signUp">
+              Sign Up
+            </div>
+            <div class="signIn_content">
+              <h3 class="signIn_content_title">Sign In or Sign Up</h3>
+              <div class="signIn_content_form">
+                <p class="signIn_content_label">Email</p>
+                <input
+                  class="signIn_content_value"
+                />
+                <p class="signIn_content_label">Password</p>
+                <input
+                  class="signIn_content_value"
+                />
+              </div>
+              <div class="signIn_content_action">Sign up</div>
+              <p class="signIn_content_tip">or <a>Sign Up</a></p>
+              <p class="signIn_content_forget">Forget Your Password？ <a>here</a></p>
+            </div>
           </div>
           <img
             src="./images/google.png"
@@ -68,12 +88,53 @@
           Products
         </div>
         <div class="header_info_navgation">
-          <div class="header_info_navgation_item">Home</div>
-          <div class="header_info_navgation_item">Product</div>
-          <div class="header_info_navgation_item">Support</div>
-          <div class="header_info_navgation_item">Excess Exchange</div>
+          <a
+            class="header_info_navgation_item home"
+            href="./index.html"
+          >
+            Home
+          </a>
+          <a
+            class="header_info_navgation_item product"
+            href="./product.html"
+          >
+            Product
+          </a>
+          <a
+            class="header_info_navgation_item support"
+          >
+            Support
+          </a>
+          <a
+            class="header_info_navgation_item express"
+            href="./express.html"
+          >
+            Excess Exchange
+          </a>
         </div>
       </div>
     </div>
   </div>
 </header>
+<script>
+  $(document).ready(function(){
+    let url = window.location.href;
+    let list = ['home', 'product', 'support', 'express'];
+    $('.header_info_navgation_item').removeClass('active')
+    if (url.indexOf('.html') == -1) {
+      $('.home').addClass('active');
+    }
+    else {
+      let arrs = url.split('.html')[0].split('/');
+      let name = arrs[arrs.length - 1];
+      if (name == 'index') {
+        $('.home').addClass('active');
+      }
+      list.forEach(item=>{
+        if (item == name) {
+          $('.'+name+'').addClass('active');
+        }
+      });
+    }
+  });
+</script>

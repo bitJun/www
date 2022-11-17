@@ -1,4 +1,21 @@
-
+/* CDN 服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+@font-face {
+  font-family: 'iconfont';  /* Project id 3757879 */
+  src: url('//at.alicdn.com/t/c/font_3757879_1rqlvnxzg2j.woff2?t=1668003206822') format('woff2'),
+       url('//at.alicdn.com/t/c/font_3757879_1rqlvnxzg2j.woff?t=1668003206822') format('woff'),
+       url('//at.alicdn.com/t/c/font_3757879_1rqlvnxzg2j.ttf?t=1668003206822') format('truetype');
+}
+.iconfont{
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  background: #F3F5F8;
+}
 .header_tip {
   height: 40px;
   background: #F8F9FB;
@@ -127,10 +144,11 @@
   display: flex;
   height: 36px;
   align-items: center;
+  position: relative;
 }
 .header_container_toolTip_actions_user_icon {
   width: 16px;
-  height: 20px;
+  /* height: 20px; */
   margin-right: 11px;
 }
 .header_container_toolTip_actions_user_item {
@@ -146,6 +164,102 @@
   cursor: pointer;
   text-decoration: none;
 }
+.signIn_content {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 36px;
+  width: 300px;
+  height: 406px;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 24px 1px rgba(52,74,109,0.32);
+  border-radius: 8px 8px 8px 8px;
+  opacity: 1;
+  padding: 30px;
+  box-sizing: border-box;
+}
+.header_container_toolTip_actions_user:hover .signIn_content {
+  display: block;
+}
+.signIn_content_title {
+  height: 20px;
+  font-size: 14px;
+  font-family: Source Han Sans SC-Medium, Source Han Sans SC;
+  font-weight: 500;
+  color: #292A2B;
+  line-height: 20px;
+  margin-bottom: 30px;
+}
+.signIn_content_form {
+  padding-bottom: 10px;
+}
+.signIn_content_label {
+  height: 20px;
+  font-size: 14px;
+  font-family: Source Han Sans SC-Normal, Source Han Sans SC;
+  font-weight: 400;
+  color: #C7CDD2;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.signIn_content_value {
+  width: 240px;
+  height: 32px;
+  line-height: 32px;
+  background: #FFFFFF;
+  border-radius: 20px 20px 20px 20px;
+  opacity: 1;
+  border: 1px solid #C7CDD2;
+  text-indent: 20px;
+  font-size: 14px;
+  font-family: Source Han Sans SC-Regular, Source Han Sans SC;
+  font-weight: 400;
+  color: #292A2B;
+  margin-bottom: 20px;
+}
+.signIn_content_action {
+  width: 240px;
+  height: 32px;
+  background: #DE3E46;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-family: Source Han Sans SC-Bold, Source Han Sans SC;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+.signIn_content_tip {
+  text-align: center;
+  height: 20px;
+  font-size: 14px;
+  font-family: Source Han Sans SC-Regular, Source Han Sans SC;
+  font-weight: 400;
+  color: #292A2B;
+  line-height: 20px;
+  margin-bottom: 30px;
+}
+.signIn_content_tip a {
+  color: #DE3E46 !important;
+  text-decoration: underline !important;
+  cursor: pointer !important;
+}
+.signIn_content_forget {
+  height: 20px;
+  font-size: 14px;
+  font-family: Source Han Sans SC-Normal, Source Han Sans SC;
+  font-weight: 400;
+  color: #8A9197;
+  line-height: 0px;
+}
+.signIn_content_forget a {
+  color: #2189FF !important;
+  text-decoration: underline !important;
+  cursor: pointer !important;
+}
+
 .header_container_toolTip_actions_user .header_container_toolTip_actions_user_item.signIn {
   margin-left: 10px;
   margin-right: 20px;
@@ -205,12 +319,15 @@
   font-weight: 400;
   color: #FFFFFF;
   cursor: pointer;
+  display: block;
+  text-decoration: none;
 }
 .header_info_navgation_item:hover,
 .header_info_navgation_item.active {
   font-size: 16px;
   font-family: Source Han Sans SC-Bold, Source Han Sans SC;
   font-weight: bold;
+  color: #FFFFFF;
   text-decoration: underline;
 }
 
@@ -322,9 +439,9 @@
 .footer_main_others_section_icons {
   display: flex;
 }
-.footer_main_others_section_icons .icon-a-49icon_zhifubao_nor {
-  width: 30px;
-  height: 30px;
+/* .footer_main_others_section_icons .icon-a-49icon_zhifubao_nor { */
+.footer_main_others_section_icons .iconfont {
+  font-size: 30px;
   color: rgba(255,255,255,0.5);
 }
 

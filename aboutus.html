@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">    
+    <link href="./css/common.css" rel="stylesheet">
+    <link href="./css/aboutus.css" rel="stylesheet">
+    <title>About Us</title>
+  </head>
+  <body>
+    <div id="header"></div>
+    <div>
+      <div class="container_view">
+        <div class="about_view">
+          <div class="about_view_nav">
+            Home
+            <i class="iconfont">&#xe679;</i>
+            <span>About Us</span>
+          </div>
+        </div>
+      </div>
+      <div class="about_container">
+        <div class="container_view about_nav">
+          <a href="./aboutus.html" class="about_nav_item active">About Us</a>
+          <a href="./contactus.html" class="about_nav_item">Contact Us</a>
+        </div>
+        <div class="container_section" id="About">
+          <div class="about_section">
+            <div class="about_section_banner">
+              <div class="container_view">
+                <h3 class="about_section_banner_title">About Us</h3>
+                <p class="about_section_banner_desc">
+                  We are passionate about what we do and<br/>
+                  we always strive to perfect our approach to deliver the best results. <br/>
+                  We are the professional distributor of electronic components.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container_view">
+          <div class="contact_section">
+            <div class="contact_section_item">
+              <img
+                src="https://p.ssl.img.360kuai.com/dmfd/158_88_75/t01d3d07e50077bd544.webp?size=514x314"
+                class="contact_section_item_img"
+              />
+              <div class="contact_section_item_info">
+                <h3 class="contact_section_item_info_title">
+                  <div class="contact_section_item_info_title_tag">
+                    <span>1</span>
+                  </div>
+                  What we do
+                </h3>
+                <p class="contact_section_item_info_desc">
+                  We adhere to the operation philosophy of credit management, human-oriented, service-oriented and quality assurance, constantly optimize our business management, to make the most effort for the trust of every customer. We believe, becoming a powerful enterprise is not the final purpose, but the beginning of better service. In the future, we will build a powerful and more professional one-stop procurement platform enterprise of electron component, by improving upstream supplier supply and upgrade our service system continuously. We are passionate about what we do and we always strive to perfect our approach to deliver the best results.
+                </p>
+              </div>
+            </div>
+            <div class="contact_section_item">
+              <div class="contact_section_item_info">
+                <h3 class="contact_section_item_info_title">
+                  <div class="contact_section_item_info_title_tag">
+                    <span>2</span>
+                  </div>
+                  What we are
+                </h3>
+                <p class="contact_section_item_info_desc">
+                  We are the professional distributor of electronic components providing a large variety of products to save you a lot of time, effort and cost with our efficient self-customized service. careful order preparation fast delivery service. Powerful enterprise management system, warehouse management system, strict product quality inspection system and convenient delivery system are suitable for each terminal PC/mobile platform.
+                </p>
+              </div>
+              <img
+                src="https://p.ssl.img.360kuai.com/dmfd/158_88_75/t01d3d07e50077bd544.webp?size=514x314"
+                class="contact_section_item_img"
+              />
+            </div>
+            <div class="contact_section_item">
+              <img
+                src="https://p.ssl.img.360kuai.com/dmfd/158_88_75/t01d3d07e50077bd544.webp?size=514x314"
+                class="contact_section_item_img"
+              />
+              <div class="contact_section_item_info">
+                <h3 class="contact_section_item_info_title">
+                  <div class="contact_section_item_info_title_tag">
+                    <span>3</span>
+                  </div>
+                  What we sell
+                </h3>
+                <p class="contact_section_item_info_desc">
+                  Crosschips cares about your concern for the product. we are working on the ISO/AS/ECLALECQC certification Comply with the strict regulation of the product control. we will only source from the authorized agency, distributor or original manufacturer. With the originate track bill of agency. we can easily track the goods from original factory to verify. Ensure our goods are 100%originate and new. make it reliable.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer"></div>
+  </body>
+  <script src="./js/jquery-3.6.1.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"> </script>
+  <script>
+    $(document).ready(function(){
+      $('#header').load('./header.html');
+      $('#footer').load('./footer.html');
+      let list = [
+        {
+          index: 1,
+          title: 'What we do',
+          desc: 'We adhere to the operation philosophy of credit management, human-oriented, service-oriented and quality assurance, constantly optimize our business management, to make the most effort for the trust of every customer. We believe, becoming a powerful enterprise is not the final purpose, but the beginning of better service. In the future, we will build a powerful and more professional one-stop procurement platform enterprise of electron component, by improving upstream supplier supply and upgrade our service system continuously. We are passionate about what we do and we always strive to perfect our approach to deliver the best results.',
+          img: 'https://p.ssl.img.360kuai.com/dmfd/158_88_75/t01d3d07e50077bd544.webp?size=514x314'
+        },
+        {
+          index: 2,
+          title: 'What we are',
+          desc: 'We are the professional distributor of electronic components providing a large variety of products to save you a lot of time, effort and cost with our efficient self-customized service. careful order preparation fast delivery service. Powerful enterprise management system, warehouse management system, strict product quality inspection system and convenient delivery system are suitable for each terminal PC/mobile platform.',
+          img: 'https://p.ssl.img.360kuai.com/dmfd/158_88_75/t01d3d07e50077bd544.webp?size=514x314'
+        },
+        {
+          index: 3,
+          title: 'What we sell',
+          desc: 'Crosschips cares about your concern for the product. we are working on the ISO/AS/ECLALECQC certification Comply with the strict regulation of the product control. we will only source from the authorized agency, distributor or original manufacturer. With the originate track bill of agency. we can easily track the goods from original factory to verify. Ensure our goods are 100%originate and new. make it reliable.',
+          img: 'https://p.ssl.img.360kuai.com/dmfd/158_88_75/t01d3d07e50077bd544.webp?size=514x314'
+        }
+      ]
+		});
+  </script>
+</html>

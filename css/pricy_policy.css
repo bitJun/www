@@ -1,0 +1,67 @@
+.pricy_view {
+  margin-top: 30px;
+  padding-bottom: 100px;
+}
+.pricy_view_nav {
+  padding: 25px 0 24px 20px;
+  font-size: 14px;
+  font-family: Source Han Sans SC-Regular, Source Han Sans SC;
+  font-weight: 400;
+  color: #8A9197;
+}
+.pricy_view_nav span {
+  font-size: 14px;
+  font-family: Source Han Sans SC-Bold, Source Han Sans SC;
+  font-weight: bold;
+  color: #292A2B;
+}
+.pricy_view_main {
+  padding: 60px 60px 120px 60px;
+  background: #FFFFFF;
+  border-radius: 8px;
+}
+.pricy_view_main_title {
+  width: 1320px;
+  height: 96px;
+  background: rgba(222, 62, 70, 0.1);
+  border-radius: 8px;
+  font-size: 48px;
+  font-family: Source Han Sans SC-Bold, Source Han Sans SC;
+  font-weight: bold;
+  color: #DE3E46;
+  text-align: center;
+  line-height: 96px;
+  margin-bottom: 60px;
+}
+.pricy_view_main_content {
+  padding: 0 40px;
+}
+.pricy_view_main_content_desc {
+  font-size: 20px;
+  font-family: Source Han Sans SC-Normal, Source Han Sans SC;
+  font-weight: 400;
+  color: #53575A;
+}
+.pricy_view_main_content_subtitle {
+  position: relative;
+  padding-left: 30px;
+  font-size: 20px;
+  font-family: Source Han Sans SC-Normal, Source Han Sans SC;
+  font-weight: bold;
+  color: #292A2B;
+  margin-bottom: 30px;
+}
+.pricy_view_main_content_subtitle::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 100px;
+  background: #ff0000;
+}
+.pricy_view_main_content_desc a {
+  text-decoration: underline;
+}

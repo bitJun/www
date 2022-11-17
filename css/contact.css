@@ -1,0 +1,122 @@
+.contact_view_nav {
+  padding: 24px 0 20px 20px;
+  font-size: 14px;
+  font-family: Source Han Sans SC-Regular, Source Han Sans SC;
+  font-weight: 400;
+  color: #8A9197;
+}
+.contact_view_nav span {
+  font-size: 14px;
+  font-family: Source Han Sans SC-Bold, Source Han Sans SC;
+  font-weight: bold;
+  color: #292A2B;
+}
+.contact_container {
+  background: #FFFFFF;
+  margin-bottom: 100px;
+}
+.contact_nav {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.contact_nav_item {
+  font-size: 16px;
+  font-family: Source Han Sans SC-Normal, Source Han Sans SC;
+  font-weight: 400;
+  color: #53575A;
+  cursor: pointer;
+  text-decoration: none;
+}
+.contact_nav_item:hover,
+.contact_nav_item.active {
+  font-size: 16px;
+  font-family: Source Han Sans SC-Bold, Source Han Sans SC;
+  font-weight: bold;
+  color: #DE3E46;
+}
+.contact_section {
+
+}
+.contact_section_banner {
+  background-image: url('../images/contact.png');
+  height: 420px;
+  background-size: cover;
+  background: rgba(41, 42, 43, 1, 0.3);
+  padding-top: 90px;
+  margin-bottom: 132px;
+}
+.contact_section_banner_title {
+  width: 344px;
+  height: 92px;
+  font-size: 64px;
+  font-family: Source Han Sans SC-Bold, Source Han Sans SC;
+  font-weight: bold;
+  color: #FFFFFF;
+  line-height: 92px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.contact_section_banner_title::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 74px;
+  height: 10px;
+  background: #DE3E46;
+}
+.contact_section_banner_subtitle {
+  height: 35px;
+  font-size: 24px;
+  font-family: Source Han Sans SC-Bold, Source Han Sans SC;
+  font-weight: bold;
+  color: #FFFFFF;
+  line-height: 0px; 
+  margin-bottom: 21px;
+}
+.contact_section_banner_desc {
+  font-size: 20px;
+  font-family: Source Han Sans SC-Light, Source Han Sans SC;
+  font-weight: 300;
+  color: #FFFFFF;
+  line-height: 29px;
+}
+.container_info {
+  background: #ffffff;
+  padding-top: 100px;
+  padding-bottom: 138px;
+}
+.container_info_item {
+  margin-bottom: 80px;
+}
+.container_info_item_title {
+  height: 52px;
+  font-size: 36px;
+  font-family: Source Han Sans SC-Bold, Source Han Sans SC;
+  font-weight: bold;
+  color: #292A2B;
+  line-height: 52px;
+  margin-bottom: 40px;
+}
+.container_info_item_desc {
+  text-indent: 52px;
+  height: 35px;
+  font-size: 24px;
+  font-family: Source Han Sans SC-Regular, Source Han Sans SC;
+  font-weight: 400;
+  color: #8A9197;
+  line-height: 35px;
+  margin-bottom: 20px;
+}
+.container_info_item_value {
+  text-indent: 52px;
+  height: 44px;
+  font-size: 30px;
+  font-family: Source Han Sans SC-Normal, Source Han Sans SC;
+  font-weight: 400;
+  color: #2189FF;
+  line-height: 44px;
+  text-decoration: underline;
+}

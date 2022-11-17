@@ -1,0 +1,125 @@
+.product_view {
+  margin-top: 30px;
+  padding-bottom: 100px;
+}
+.product_view_nav {
+  padding: 24px 0 20px 20px;
+  font-size: 14px;
+  font-family: Source Han Sans SC-Regular, Source Han Sans SC;
+  font-weight: 400;
+  color: #8A9197;
+}
+.product_view_nav span {
+  font-size: 14px;
+  font-family: Source Han Sans SC-Bold, Source Han Sans SC;
+  font-weight: bold;
+  color: #292A2B;
+}
+.product_view_content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product_view_content_list {
+  width: 260px;
+  height: 810px;
+  background: #FFFFFF;
+  box-shadow: 0px 3px 10px 1px rgba(52,74,109,0.16);
+  border-radius: 8px 8px 8px 8px;
+  opacity: 1;
+  padding: 30px 0;
+  box-sizing: border-box;
+}
+
+.product_view_content_list_item {
+  position: relative;
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  font-family: Source Han Sans SC-Medium, Source Han Sans SC;
+  font-weight: 500;
+  color: #292A2B;
+  padding-left: 30px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.product_view_content_list_item:hover,
+.product_view_content_list_item.active {
+  color: #DE3E46;
+}
+
+.product_view_content_list_item:hover::before,
+.product_view_content_list_item.active::before {
+  content: '';
+  width: 4px;
+  height: 20px;
+  background: #DE3E46;
+  border-radius: 0px 0px 0px 0px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.product_view_content_main {
+  width: 1170px;
+  height: 1560px;
+  padding: 30px 30px 70px 30px;
+  background: #FFFFFF;
+  box-shadow: 0px 3px 10px 1px rgba(52,74,109,0.16);
+  border-radius: 8px 8px 8px 8px;
+  opacity: 1;
+}
+.product_view_content_main_title {
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  font-family: Source Han Sans SC-Bold, Source Han Sans SC;
+  font-weight: bold;
+  color: #292A2B;
+  margin-bottom: 30px;
+}
+.product_view_content_main_section {
+  width: 1110px;
+  height: 330px;
+  box-shadow: 0px 8px 24px 1px rgba(52,74,109,0.1);
+  border-radius: 8px 8px 8px 8px;
+  opacity: 1;
+  border: 1px solid #C7CDD2;
+  margin-bottom: 30px;
+}
+.product_view_content_main_section_title {
+  width: 1110px;
+  height: 64px;
+  background: #F3F5F8;
+  border-radius: 8px 8px 0px 0px;
+  opacity: 1;
+  text-indent: 40px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-family: Source Han Sans SC-Bold, Source Han Sans SC;
+  font-weight: bold;
+  color: #8A9197;
+}
+.product_view_content_main_section_list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 36px;
+}
+.product_view_content_main_section_list_item {
+  width: 33.33%;
+  margin-bottom: 36px;
+  height: 24px;
+  font-size: 16px;
+  font-family: Source Han Sans SC-Normal, Source Han Sans SC;
+  font-weight: 400;
+  color: #292A2B;
+  line-height: 24px;
+  text-decoration: underline;
+  cursor: pointer;
+  text-indent: 114px;
+}
+.product_view_content_main_section_list_item.active,
+.product_view_content_main_section_list_item:hover {
+  color: #DE3E46;
+}
