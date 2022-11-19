@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">    
+    <link href="./css/common.css" rel="stylesheet">
+    <link href="./css/rma.css" rel="stylesheet">
+    <title>RMA</title>
+  </head>
+  <body>
+    <div id="header"></div>
+    <div>
+      <div class="container_view">
+        <div class="rma_view">
+          <div class="rma_view_nav">
+            Support
+            <i class="iconfont">&#xe65e;</i>
+            FAQ
+            <i class="iconfont">&#xe65e;</i>
+            <span>Payment</span>
+          </div>
+          <div class="rma_view_content">
+            <div class="rma_view_content_list">
+              <a href="./payment.html" class="rma_view_content_list_item">What Payment Methods available</a>
+              <a href="./shipping.html" class="rma_view_content_list_item">Shipping&Delivery</a>
+              <a href="./refund.html" class="rma_view_content_list_item">Refund&Return</a>
+              <a href="./rma.html" class="rma_view_content_list_item active">RMA Warranty</a>
+              <a href="./quality.html" class="rma_view_content_list_item">Quality Management</a>
+              <a class="rma_view_content_list_item">Traceability</a>
+              <a class="rma_view_content_list_item">COC</a>
+            </div>
+            <div class="rma_view_content_main">
+              <h3 class="rma_view_content_main_title">RMA Procedure</h3>
+              <p class="rma_view_content_main_desc">For service and repair issues, please contact or email DVB-TECH Customer Service and Support team. You will need to provide the serial number, the part number with description, as well as a complete fault description of the unit. Please provide as much detail to the fault description; provide pictures, sample data, or pri </p>
+              <div class="rma_view_section">
+                <h3 class="rma_view_content_main_headtitle">Returning Units</h3>
+                <p class="rma_view_content_main_desc">If it has been determined that the product will need to be repaired at one of our authorized facilities, an RMA number will be issued (Return Material Authorization number). This number should be clearly visible on all shipment documents. Please note, returned goods will not be accepted without an official RMA number.</p>
+                <p class="rma_view_content_main_desc">When possible, please ship the product back in its original packaging. We can not accept liability for products damaged during shipping back to us.</p>
+                <p class="rma_view_content_main_desc">Upon reception of your product, preliminary assessment will be performed. Products damaged through neglect due to inadequate packaging or during transit, will have the warranty voided. All of our products require stable and industry standard packing materials.</p>
+              </div>
+              <div class="rma_view_section">
+                <h3 class="rma_view_content_main_headtitle">IMPORTANT</h3>
+                <div class="rma_view_content_main_tip">
+                  <span>1.</span>
+                  When returning items to DVB-TECH, please indicate on the commercial invoice and shipping documents “It- alian Goods Returning to Manufacturer for Repair”, along with the RMA # provided as reference and the val- ue for customs purposes.
+                </div>
+                <div class="rma_view_content_main_tip">
+                  <span>2.</span>
+                  Please do not send units without an RMA number.
+                </div>
+                <div class="rma_view_content_main_tip">
+                  <span>3.</span>
+                  The present RMA procedure is subject to DVB-TECH INTERNATIONAL STANDARD TERMS AND CONDITIONS OF 
+SALE APPLICABLE TO BUYER’S PURCHASE ORDERS.
+                </div>
+              </div>
+              <div class="rma_view_section">
+                <h3 class="rma_view_content_main_headtitle">REPAIR COSTS</h3>
+                <p class="rma_view_content_main_desc"><span>Warranty Repair:</span>&nbsp;Units which are under warranty are of no charge to the customer. In the event that there is “No Fault Found”, a charge of EURO €2,500.00 per unit will be invoiced to cover evaluation, labor and testing, prior to shipping.</p>
+                <p class="rma_view_content_main_desc">As per our Warranty procedures, the Customer is responsible for shipment to DVB-TECH and DVB-TECH is responsible for the return shipment.</p>
+                <p class="rma_view_content_main_desc"><span>Non-Warranty Repair:</span>&nbsp;Units which are non-warranty incur a minimum charge of EURO €2,500.00 per uni</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer"></div>
+  </body>
+  <script src="./js/jquery-3.6.1.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"> </script>
+  <script>
+    $(document).ready(function(){
+      $('#header').load('./header.html');
+      $('#footer').load('./footer.html');
+      $('.payment_view_content_list_item').click(function(){
+        $(this).addClass('active').siblings().removeClass('active');
+      })
+		});
+  </script>
+</html>

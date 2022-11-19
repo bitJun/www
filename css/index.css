@@ -54,6 +54,7 @@
   width: 640px;
   height: 420px;
   position: relative;
+  cursor: pointer;
 }
 .index_view_section_other_banner_container {
   position: absolute;

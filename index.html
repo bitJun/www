@@ -126,27 +126,6 @@
                   <div class="index_view_section_other_order_td_item orderNo">50**55</div>
                   <div class="index_view_section_other_order_td_item orderAmmount">＄1036.00</div>
                   <div class="index_view_section_other_order_td_item orderTime">2 min ago</div>
-                  <div class="index_view_section_other_order_td_item orderStatus">Unpaid</div>
-                </div>
-                <div class="index_view_section_other_order_td">
-                  <div class="index_view_section_other_order_td_item orderName">Mr.Li**</div>
-                  <div class="index_view_section_other_order_td_item orderNo">50**55</div>
-                  <div class="index_view_section_other_order_td_item orderAmmount">＄1036.00</div>
-                  <div class="index_view_section_other_order_td_item orderTime">2 min ago</div>
-                  <div class="index_view_section_other_order_td_item orderStatus blue">Dispatch</div>
-                </div>
-                <div class="index_view_section_other_order_td">
-                  <div class="index_view_section_other_order_td_item orderName">Mr.Li**</div>
-                  <div class="index_view_section_other_order_td_item orderNo">50**55</div>
-                  <div class="index_view_section_other_order_td_item orderAmmount">＄1036.00</div>
-                  <div class="index_view_section_other_order_td_item orderTime">2 min ago</div>
-                  <div class="index_view_section_other_order_td_item orderStatus">Unpaid</div>
-                </div>
-                <div class="index_view_section_other_order_td">
-                  <div class="index_view_section_other_order_td_item orderName">Mr.Li**</div>
-                  <div class="index_view_section_other_order_td_item orderNo">50**55</div>
-                  <div class="index_view_section_other_order_td_item orderAmmount">＄1036.00</div>
-                  <div class="index_view_section_other_order_td_item orderTime">2 min ago</div>
                   <div class="index_view_section_other_order_td_item orderStatus blue">Dispatch</div>
                 </div>
               </div>
@@ -292,7 +271,10 @@
           el: '.swiper-pagination',
           clickable :true,
         }
-      })        
+      });
+      $('.swiper-slide').click(function(){
+        window.open('http://www.baidu.com')
+      })       
 		});
   </script>
 </html>

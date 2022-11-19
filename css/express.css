@@ -162,3 +162,49 @@
   background: #F8F9FB;
   border-radius: 8px;
 }
+.express_view_step {
+  padding: 50px 40px 40px 40px;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 24px 1px rgba(52,74,109,0.1);
+  border-radius: 8px;
+  opacity: 1;
+  margin-bottom: 120px;
+}
+.express_view_step_icon {
+  width: 100%;
+  margin-bottom: 41px;
+}
+.express_view_step_list {
+  display: flex;
+  padding-left: 28px;
+}
+.express_view_step_list_item {
+  font-size: 20px;
+  font-family: Source Han Sans SC-Regular, Source Han Sans SC;
+  font-weight: 400;
+  color: #292A2B;
+  line-height: 20px;
+}
+.express_view_step_list_item.one {
+  width: 170px;
+  margin-right: 62px; 
+}
+.express_view_step_list_item.two {
+  width: 174px;
+  margin-right: 81px;
+}
+.express_view_step_list_item.three {
+  width: 112px;
+  margin-right: 115px;
+}
+.express_view_step_list_item.four {
+  width: 125px;
+  margin-right: 72px;
+}
+.express_view_step_list_item.five {
+  width: 164px;
+  margin-right: 87px;
+}
+.express_view_step_list_item.six {
+  width: 112px;
+}

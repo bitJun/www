@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">    
+    <link href="./css/common.css" rel="stylesheet">
+    <link href="./css/payment.css" rel="stylesheet">
+    <title>Payment</title>
+  </head>
+  <body>
+    <div id="header"></div>
+    <div>
+      <div class="container_view">
+        <div class="payment_view">
+          <div class="payment_view_nav">
+            Support
+            <i class="iconfont">&#xe65e;</i>
+            FAQ
+            <i class="iconfont">&#xe65e;</i>
+            <span>Payment</span>
+          </div>
+          <div class="payment_view_content">
+            <div class="payment_view_content_list">
+              <a href="./payment.html" class="payment_view_content_list_item active">What Payment Methods available</a>
+              <a href="./shipping.html" class="payment_view_content_list_item">Shipping&Delivery</a>
+              <a href="./refund.html" class="payment_view_content_list_item">Refund&Return</a>
+              <a href="./rma.html" class="payment_view_content_list_item">RMA Warranty</a>
+              <a href="./quality.html" class="payment_view_content_list_item">Quality Management</a>
+              <a class="payment_view_content_list_item">Traceability</a>
+              <a class="payment_view_content_list_item">COC</a>
+            </div>
+            <div class="payment_view_content_main">
+              <h3 class="payment_view_content_main_title">What payment methods are available?</h3>
+              <p class="payment_view_content_main_subtitle">
+                Currently, we accept <span>PayPal,Credit Card</span> and <span>Wire Transfer</span> payment methods.
+              </p>
+              <div class="payment_view_section">
+                <h3 class="payment_view_content_main_headtitle">Paypal</h3>
+                <p class="payment_view_content_main_desc">Redirect to PayPal via a secure online connection, and pay with the balance of your PayPal account or Credit/Debit</p>
+                <div style="padding-left: 30px; display: flex;">
+                  <img
+                    src="./images/paypal.png"
+                    class="payment_view_content_main_img"
+                  >
+                </div>
+              </div>
+              <div class="payment_view_section">
+                <h3 class="payment_view_content_main_headtitle">Credit/Debit Card</h3>
+                <p class="payment_view_content_main_desc">Pay online with Visa, MasterCard, American Express, and UnionPay Card. </p>
+                <div style="padding-left: 30px; display: flex;">
+                  <img
+                    src="./images/visa.png"
+                    class="payment_view_content_main_img"
+                  >
+                  <img
+                    src="./images/mastercard.png"
+                    class="payment_view_content_main_img"
+                  >
+                  <img
+                    src="./images/express.png"
+                    class="payment_view_content_main_img"
+                  >
+                  <img
+                    src="./images/yinlian.png"
+                    class="payment_view_content_main_img"
+                  >
+                </div>
+              </div>
+              <div class="payment_view_section" style="border-bottom: 0;">
+                <h3 class="payment_view_content_main_headtitle">Prepaid Wire Transfer</h3>
+                <p class="payment_view_content_main_desc">JLCPCB accepts direct wire transfer from your bank to ours. You can pre-transfer money into our bank account, and the fund will be added to your JLCPCB Payment balance, then you can use the balance to pay for orders on JLCPCB.com. </p>
+                <p class="payment_view_content_main_tip">Please contact us at support@jlcpcb.com if you have any questions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer"></div>
+  </body>
+  <script src="./js/jquery-3.6.1.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"> </script>
+  <script>
+    $(document).ready(function(){
+      $('#header').load('./header.html');
+      $('#footer').load('./footer.html');
+      $('.payment_view_content_list_item').click(function(){
+        $(this).addClass('active').siblings().removeClass('active');
+      })
+		});
+  </script>
+</html>
