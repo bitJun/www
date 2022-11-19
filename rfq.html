@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">    
+    <link href="./css/common.css" rel="stylesheet">
+    <link href="./css/rfq.css" rel="stylesheet">
+    <title>RFQ</title>
+  </head>
+  <body>
+    <div id="header"></div>
+    <div>
+      <div class="container_view">
+        <div class="rfq_view">
+          <div class="rfq_view_nav">
+            Product
+            <i class="iconfont">&#xe65e;</i>
+            <span>RFQ</span>
+          </div>
+          <div class="container_view whitebg">
+            <div class="rfq_view_section" style="border-bottom: 1px solid #C7CDD2;">
+              <h3 class="rfq_view_section_title">
+                Contact us now to get the immidiately suppot, Please describe your 
+                demands as detail as possible for better services.
+              </h3>
+              <p class="rfq_view_section_subtitle">MAIL: </p>
+              <input
+                class="rfq_view_section_value"
+              />
+              <p class="rfq_view_section_subtitle">Company name :</p>
+              <input
+                class="rfq_view_section_value"
+              />
+              <p class="rfq_view_section_subtitle">TEL:</p>
+              <input
+                class="rfq_view_section_value"
+              />
+            </div>
+            <div class="rfq_view_section" style="border-bottom: 1px solid #C7CDD2;">
+              <table>
+                <thead>
+                  <tr>
+                    <td>Part Number</td>
+                    <td>Manufacturer</td>
+                    <td>Quantity</td>
+                    <td>Lead Time</td>
+                    <td>Lead Time</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <a class="rfq_view_section_add">
+                <i class="iconfont">&#xe682;</i>Add More Item 
+              </a>
+            </div>
+            <div class="rfq_view_section">
+              <p class="rfq_view_section_subtitle">Title :</p>
+              <input
+                class="rfq_view_section_value"
+              />
+              <p class="rfq_view_section_subtitle">Comments :</p>
+              <textarea
+                class="rfq_view_section_text"
+              ></textarea>
+              <a class="rfq_view_section_submit">Submit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer"></div>
+  </body>
+  <script src="./js/jquery-3.6.1.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"> </script>
+  <script>
+    $(document).ready(function(){
+      $('#header').load('./header.html');
+      $('#footer').load('./footer.html');
+      $('.rfq_view_section_add').click(function(){
+        let str = '';
+        str += '<tr>';
+        str += '<td></td>';
+        str += '<td></td>';
+        str += '<td></td>';
+        str += '<td></td>';
+        str += '<td></td>';
+        str += '</tr>';
+        $('.rfq_view_section table tbody').append(str);
+      })
+		});
+  </script>
+</html>

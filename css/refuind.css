@@ -1,0 +1,167 @@
+.refuind_view {
+  margin-top: 30px;
+  padding-bottom: 100px;
+}
+.refuind_view_nav {
+  padding: 25px 0 24px 20px;
+  font-size: 14px;
+  font-family: Source Han Sans SC-Regular, Source Han Sans SC;
+  font-weight: 400;
+  color: #8A9197;
+}
+.refuind_view_nav span {
+  font-size: 14px;
+  font-family: Source Han Sans SC-Bold, Source Han Sans SC;
+  font-weight: bold;
+  color: #292A2B;
+}
+.refuind_view_content {
+  display: flex;
+  justify-content: space-between;
+}
+.refuind_view_content_list {
+  padding-top: 30px;
+  width: 340px;
+  height: 810px;
+  background: #FFFFFF;
+  box-shadow: 0px 3px 10px 1px rgba(52,74,109,0.16);
+  border-radius: 8px;
+  opacity: 1;
+}
+.refuind_view_content_list_item {
+  height: 24px;
+  font-size: 14px;
+  font-family: Source Han Sans SC-Medium, Source Han Sans SC;
+  font-weight: 500;
+  color: #292A2B;
+  line-height: 24px;
+  margin-bottom: 22px;
+  padding-left: 30px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+}
+.refuind_view_content_list_item:hover,
+.refuind_view_content_list_item.active {
+  font-size: 16px;
+  font-family: Source Han Sans SC-Bold, Source Han Sans SC;
+  font-weight: bold;
+  color: #DE3E46 !important;
+  text-decoration: none;
+}
+.refuind_view_content_list_item.active::before {
+  content: '';
+  width: 4px;
+  height: 20px;
+  background: #DE3E46;
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+
+
+.refuind_view_content_main {
+  width: 1070px;
+  /* height: 1180px; */
+  background: #FFFFFF;
+  border-radius: 8px;
+  opacity: 1;
+  padding: 72px 100px 0 100px;
+}
+.refuind_view_content_main_title {
+  height: 61px;
+  font-size: 42px;
+  font-family: Source Han Sans SC-Bold, Source Han Sans SC;
+  font-weight: bold;
+  color: #292A2B;
+  line-height: 61px;
+  text-align: center;
+  margin-bottom: 43px;
+}
+.refuind_view_content_main_subtitle {
+  height: 29px;
+  font-size: 20px;
+  font-family: Source Han Sans SC-Normal, Source Han Sans SC;
+  font-weight: 400;
+  color: #8A9197;
+  line-height: 29px;
+  margin-bottom: 60px;
+}
+.refuind_view_content_main_subtitle .iconfont {
+  color: #DE3E46;
+  margin-right: 10px;
+}
+.refuind_view_content_main_subtitle span {
+  color: #53575A;
+}
+.refuind_view_content_main_headtitle {
+  position: relative;
+  padding-left: 30px;
+  font-size: 20px;
+  font-family: Source Han Sans SC-Normal, Source Han Sans SC;
+  font-weight: bold;
+  color: #292A2B;
+  margin-bottom: 30px;
+}
+.refuind_view_content_main_headtitle::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 100px;
+  background: #ff0000;
+}
+.refuind_view_content_main_desc {
+  /* text-indent: 30px; */
+  font-size: 20px;
+  font-family: Source Han Sans SC-Normal, Source Han Sans SC;
+  font-weight: 400;
+  color: #53575A;
+  margin-bottom: 30px;
+}
+.refuind_view_content_main_desc span {
+  color: #53575A;
+  text-decoration: underline;
+}
+.refuind_view_content_main_img {
+  height: 60px;
+  margin-right: 11px;
+}
+.refuind_view_section {
+  padding-bottom: 41px;
+  border-bottom: 1px solid #C7CDD2;
+  margin-bottom: 60px;
+}
+.refuind_view_content_main_tip {
+  padding-left: 78px;
+  margin-bottom: 30px;
+  position: relative;
+  font-size: 16px;
+  font-family: Source Han Sans SC-Regular, Source Han Sans SC;
+  font-weight: 400;
+  color: #292A2B;
+  line-height: 24px;
+}
+.refuind_view_content_main_tip span {
+  position: absolute;
+  left: 55px;
+  top: 6px;
+  width: 14px;
+  height: 14px;
+  background: #DE3E46;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-family: D-DIN DIN-Bold, D-DIN DIN;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+.red {
+  color: #DE3E46;
+}

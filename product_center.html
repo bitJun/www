@@ -20,31 +20,37 @@
               <div class="center_view_main_filter_item" data-index="0">
                 <i class="iconfont">&#xe683;</i>&nbsp;<span>Stock</span>:
                 <div class="center_view_main_filter_item_value"></div>
-                <div class="center_view_main_filter_item_select">
-                  <div class="center_view_main_filter_item_select_item">XINLINX</div>
-                  <div class="center_view_main_filter_item_select_item">XINLINX</div>
-                  <div class="center_view_main_filter_item_select_item">XINLINX</div>
-                  <div class="center_view_main_filter_item_select_item">XINLINX</div>
+                <div class="center_view_main_filter_item_down">
+                  <div class="center_view_main_filter_item_select">
+                    <div class="center_view_main_filter_item_select_item">XINLINX</div>
+                    <div class="center_view_main_filter_item_select_item">XINLINX</div>
+                    <div class="center_view_main_filter_item_select_item">XINLINX</div>
+                    <div class="center_view_main_filter_item_select_item">XINLINX</div>
+                  </div>
                 </div>
               </div>
               <div class="center_view_main_filter_item" data-index="1">
                 <i class="iconfont">&#xe683;</i>&nbsp;<span>MNF</span>:
                 <div class="center_view_main_filter_item_value"></div>
-                <div class="center_view_main_filter_item_select">
-                  <div class="center_view_main_filter_item_select_item">XINLINX</div>
-                  <div class="center_view_main_filter_item_select_item">XINLINX</div>
-                  <div class="center_view_main_filter_item_select_item">XINLINX</div>
-                  <div class="center_view_main_filter_item_select_item">XINLINX</div>
+                <div class="center_view_main_filter_item_down">
+                  <div class="center_view_main_filter_item_select">
+                    <div class="center_view_main_filter_item_select_item">XINLINX</div>
+                    <div class="center_view_main_filter_item_select_item">XINLINX</div>
+                    <div class="center_view_main_filter_item_select_item">XINLINX</div>
+                    <div class="center_view_main_filter_item_select_item">XINLINX</div>
+                  </div>
                 </div>
               </div>
               <div class="center_view_main_filter_item" data-index="2">
                 <i class="iconfont">&#xe683;</i>&nbsp;<span>Delivery Period</span>:
                 <div class="center_view_main_filter_item_value"></div>
-                <div class="center_view_main_filter_item_select">
-                  <div class="center_view_main_filter_item_select_item">XINLINX</div>
-                  <div class="center_view_main_filter_item_select_item">XINLINX</div>
-                  <div class="center_view_main_filter_item_select_item">XINLINX</div>
-                  <div class="center_view_main_filter_item_select_item">XINLINX</div>
+                <div class="center_view_main_filter_item_down">
+                  <div class="center_view_main_filter_item_select">
+                    <div class="center_view_main_filter_item_select_item">XINLINX</div>
+                    <div class="center_view_main_filter_item_select_item">XINLINX</div>
+                    <div class="center_view_main_filter_item_select_item">XINLINX</div>
+                    <div class="center_view_main_filter_item_select_item">XINLINX</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -170,11 +176,11 @@
       let key = null;
       $('#header').load('./header.html');
       $('#footer').load('./footer.html');
-      $('.center_view_main_filter_item_value').hover(function() {
-        $(this).parent().find('.center_view_main_filter_item_select').show();
-      }, function() {
-        // $(this).parent().find('.center_view_main_filter_item_select').hide();
-      });
+      // $('.center_view_main_filter_item_value').hover(function() {
+      //   $(this).parent().find('.center_view_main_filter_item_select').show();
+      // }, function() {
+      //   // $(this).parent().find('.center_view_main_filter_item_select').hide();
+      // });
       $('[data-toggle="tooltip"]').tooltip();
       $('.center_view_main_filter_item .iconfont').click(function(){
         let type = $(this).parent().find('span').text();
