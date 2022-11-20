@@ -200,7 +200,8 @@
       $('.register_view_right_main_control_list_item').click(function(){
         let text = $(this).text();
         $('#country').val(text);
-        $('.register_view_right_main_control_list').hide()
+        checkInput();
+        $('.register_view_right_main_control_list').hide();
       });
       // $('#email').on('input propertychange', function() {
       //   let params = {
