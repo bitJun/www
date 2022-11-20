@@ -42,7 +42,7 @@
 .contact_section_banner {
   background-image: url('../images/contact.png');
   height: 420px;
-  background-size: cover;
+  background-size: 100% 100%;
   background: rgba(41, 42, 43, 1, 0.3);
   padding-top: 90px;
   margin-bottom: 132px;
