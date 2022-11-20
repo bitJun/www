@@ -28,18 +28,21 @@
               <p class="rfq_view_section_subtitle">MAIL: </p>
               <input
                 class="rfq_view_section_value"
+                id="mail"
               />
               <p class="rfq_view_section_subtitle">Company name :</p>
               <input
                 class="rfq_view_section_value"
+                id="company"
               />
               <p class="rfq_view_section_subtitle">TEL:</p>
               <input
                 class="rfq_view_section_value"
+                id="tel"
               />
             </div>
             <div class="rfq_view_section" style="border-bottom: 1px solid #C7CDD2;">
-              <table>
+              <table class="rfq_view_section_table">
                 <thead>
                   <tr>
                     <td>Part Number</td>
@@ -51,11 +54,21 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td class="number">
+                      <input />
+                    </td>
+                    <td class="Manu">
+                      <input />
+                    </td>
+                    <td class="quantity">
+                      <input />
+                    </td>
+                    <td class="Lead">
+                      <input />
+                    </td>
+                    <td class="time">
+                      <input />
+                    </td>
                   </tr>
                 </tbody>
               </table>
@@ -67,10 +80,12 @@
               <p class="rfq_view_section_subtitle">Title :</p>
               <input
                 class="rfq_view_section_value"
+                id="title"
               />
               <p class="rfq_view_section_subtitle">Comments :</p>
               <textarea
                 class="rfq_view_section_text"
+                id="comment"
               ></textarea>
               <a class="rfq_view_section_submit">Submit</a>
             </div>
@@ -90,13 +105,47 @@
       $('.rfq_view_section_add').click(function(){
         let str = '';
         str += '<tr>';
-        str += '<td></td>';
-        str += '<td></td>';
-        str += '<td></td>';
-        str += '<td></td>';
-        str += '<td></td>';
+        str += '<td class="number"><input /></td>';
+        str += '<td class="Manu"><input /></td>';
+        str += '<td class="quantity"><input /></td>';
+        str += '<td class="Lead"><input /></td>';
+        str += '<td class="time"><input /></td>';
         str += '</tr>';
         $('.rfq_view_section table tbody').append(str);
+      });
+      $('.rfq_view_section_submit').click(function(){
+        let tds = $('.rfq_view_section_table').find('tbody').find('tr');
+        // console.log('tds', tds)
+        let list = [];
+        for (let i = 0; i < tds.length; i++) {
+          let data = {};
+          data.number = $(tds).eq(i).find('.number').find('input').val();
+          data.Manu = $(tds).eq(i).find('.Manu').find('input').val();
+          data.quantity = $(tds).eq(i).find('.quantity').find('input').val();
+          data.Lead = $(tds).eq(i).find('.Lead').find('input').val();
+          data.time = $(tds).eq(i).find('.time').find('input').val();
+          list.push(data)
+        }
+        let params = {
+          mail: $('#mail').val(),
+          company: $('#company').val(),
+          tel: $('#tel').val(),
+          title: $('#title').val(),
+          comment: $('#comment').val(),
+          list: list
+        }
+        $.ajax({
+          url: 'https://www.baidu.com',
+          type: 'post',
+          data: params,
+          dataType: 'json',
+          success: function() {
+
+          },
+          error: function() {
+
+          }
+        })
       })
 		});
   </script>

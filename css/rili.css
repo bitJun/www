@@ -1,0 +1,527 @@
+body{
+	margin: 0;
+	padding: 0;
+	
+}
+.xsw_dateX {
+	width: 280px;
+	border: 1px dotted #000;
+}
+
+.xsw_dateX .tap {
+	width: 100%;
+	height: 40px;
+	display: flex;
+}
+
+.xsw_dateX .tap .qian {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+.xsw_dateX .tap .qian .list{
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.xsw_dateX .tap .zhong {
+	flex: 2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.xsw_dateX .tap .hou {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+.xsw_dateX .tap .hou .list{
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.xsw_dateX .tou {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	background-color: aquamarine;
+	box-sizing: border-box;
+}
+
+.xsw_dateX #chaDian {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 30px;
+	color: #000;
+	border-top: 1px #000 dotted;
+	cursor: pointer;
+}
+
+.xsw_dateX .fttor {
+	width: 100%;
+}
+
+.xsw_dateX .fttor .fttormain {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	box-sizing: border-box;
+	margin: 10px 0;
+}
+
+.xsw_dateX .zai {
+	display: block
+}
+
+.xsw_dateX .hide {
+	display: none
+}
+
+.xsw_dateX .fttor .left {
+	flex: 2;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+	box-sizing: border-box;
+	padding-left: 5px;
+	font-size: 10px;
+	line-height: 1.8;
+}
+
+.xsw_dateX .fttor .zhong {
+	flex: 1;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	box-sizing: border-box;
+	align-items: center;
+}
+
+.xsw_dateX .fttor .left .tiShi,
+.xsw_dateX .fttor .right .tiShi {
+	color: red;
+	font-size: 12px;
+}
+
+.xsw_dateX .fttor .zhong .today {
+	width: 70px;
+	height: 25px;
+	background-color: #000;
+	color: #FFFFFF;
+	display: flex;
+	justify-content: center;
+	box-sizing: border-box;
+	align-items: center;
+	border-radius: 5px;
+	margin: 5px;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.xsw_dateX .fttor .zhong .dianjiH {
+	width: 70px;
+	height: 25px;
+	background-color: cornflowerblue;
+	color: #FFFFFF;
+	display: flex;
+	justify-content: center;
+	box-sizing: border-box;
+	align-items: center;
+	border-radius: 5px;
+	margin: 5px;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.xsw_dateX .fttor .right {
+	flex: 2;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	flex-direction: column;
+	box-sizing: border-box;
+	padding-right: 5px;
+	font-size: 10px;
+	line-height: 1.8;
+}
+
+.xsw_dateX .dateMain {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	overflow: hidden;
+}
+.xsw_dateX .dateMain .dateMain1{
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+.xsw_dateX .tou .touList {
+	width: calc(100%/7);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 40px;
+	border-right: 1px #fff solid;
+}
+
+.xsw_dateX .tou .touList:last-child {
+	border-right: none;
+}
+
+.xsw_dateX .dateMain .dateList {
+	width: calc(100%/7 - 0.1px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 40px;
+	cursor: pointer;
+}
+
+.xsw_dateX .dateMain .today {
+	background-color: #000000;
+	color: #fff;
+}
+
+.xsw_dateX .dateMain .xuanZhong {
+	border: 1px #000000 solid;
+	box-sizing: border-box;
+}
+
+.xsw_dateX .dateMain .shang {
+	color: #ccc;
+}
+
+.xsw_dateX .dateMain .xia {
+	color: #ccc;
+}
+
+.xsw_dateX .dateMain .dateList .zi {
+	font-size: 8px;
+	color: #666;
+}
+
+.xsw_dateX .dateMain .shang .zi,
+.xsw_dateX .dateMain .xia .zi {
+	font-size: 8px;
+	color: #ccc;
+}
+
+
+
+
+
+
+
+.xsw_date {
+	width: 210px;
+	border: 1px dotted #000;
+	background-color: #fff;
+}
+
+.xsw_date .tap {
+	width: 100%;
+	height: 30px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.xsw_date .kongJIan {
+	width: 100%;
+	height: 30px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	font-size: 12px;
+}
+.xsw_date .kongJIan .left {
+	flex: 1;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	color: #FF0000;
+	transform:scale(0.8);
+}
+.xsw_date .kongJIan .zhongjian {
+	flex: 1;
+	height: 100%;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform:scale(0.8);
+}
+.xsw_date .kongJIan .right {
+	flex: 1;
+	height: 100%;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #6495ED;
+	transform:scale(0.8);
+}
+.xsw_date .tap .left{
+	flex: 1;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transform:scale(0.8);
+}
+.xsw_date .tap .right{
+	flex: 1;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transform:scale(0.8);
+}
+.xsw_date .tap .list{
+	cursor: pointer;
+}
+.xsw_date .tou {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	background-color: aquamarine;
+	box-sizing: border-box;
+}
+
+.xsw_date #chaDian {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 20px;
+	color: #000;
+	border-top: 1px #000 dotted;
+	cursor: pointer;
+}
+
+.xsw_date .fttor {
+	width: 100%;
+}
+
+.xsw_date .fttor .fttormain {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	box-sizing: border-box;
+	margin: 10px 0;
+}
+
+.xsw_date .zai {
+	display: block
+}
+
+.xsw_date .hide {
+	display: none
+}
+
+.xsw_date .fttor .left {
+	flex: 2;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+	box-sizing: border-box;
+	padding-left: 5px;
+	font-size: 10px;
+	line-height: 1.8;
+	transform:scale(0.8);
+}
+
+.xsw_date .fttor .zhong {
+	flex: 1;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	box-sizing: border-box;
+	align-items: center;
+	
+	transform:scale(0.8);
+}
+
+.xsw_date .fttor .left .tiShi,
+.xsw_date .fttor .right .tiShi {
+	color: red;
+	font-size: 12px;
+}
+
+.xsw_date .fttor .zhong .today {
+	width: 70px;
+	height: 25px;
+	background-color: #000;
+	color: #FFFFFF;
+	display: flex;
+	justify-content: center;
+	box-sizing: border-box;
+	align-items: center;
+	border-radius: 5px;
+	margin: 5px;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.xsw_date .fttor .zhong .dianjiH {
+	width: 70px;
+	height: 30px;
+	background-color: cornflowerblue;
+	color: #FFFFFF;
+	display: flex;
+	justify-content: center;
+	box-sizing: border-box;
+	align-items: center;
+	border-radius: 5px;
+	margin: 5px;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.xsw_date .fttor .right {
+	flex: 2;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	flex-direction: column;
+	box-sizing: border-box;
+	padding-right: 5px;
+	font-size: 10px;
+	line-height: 1.8;
+	transform:scale(0.8);
+}
+
+.xsw_date .dateMain {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	overflow: hidden;
+	font-weight: bold;
+}
+.xsw_date .dateMain .dateMain1{
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+.xsw_date .tou .touList {
+	width: calc(100%/7);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 20px;
+	font-size: 12px;
+	border-right: 1px #fff solid;
+}
+
+.xsw_date .tou .touList:last-child {
+	border-right: none;
+}
+
+.xsw_date .dateMain .dateList {
+	width: calc(100%/7);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 28px;
+	font-size: 12px;
+	cursor: pointer;
+	box-sizing: border-box;
+}
+
+.xsw_date .dateMain .today {
+	background-color: #000000;
+	color: #fff;
+}
+
+.xsw_date .dateMain .xuanZhong {
+	border: 1px #000000 solid;
+	box-sizing: border-box;
+}
+
+.xsw_date .dateMain .shang {
+	color: #999;
+}
+
+.xsw_date .dateMain .xia {
+	font-size: 12px;
+	color: #999;
+}
+.xsw_date .dateMain .dateList .zi00 {
+	white-space: nowrap;
+	
+}
+.xsw_date .dateMain .dateList .zi {
+	white-space: nowrap;
+	transform:scale(0.4);
+	color: #666;
+}
+
+.xsw_date .dateMain .shang .zi,
+.xsw_date .dateMain .xia .zi {
+	font-size: 8px;
+	color: #999;
+}
+#BG2{
+	font-size: 14px;
+}
+#BG2XUanYear,#BG2XUanMonth{
+	background-color: #000;
+	color:#fff;
+	border-radius: 5px;
+}
+#BG2::-webkit-scrollbar  
+{  
+    width: 5px;  /*滚动条宽度*/
+    height: 10px  /*滚动条高度*/
+}  
+  
+/*定义滚动条轨道 内阴影+圆角*/  
+#BG2::-webkit-scrollbar-track  
+{  
+    /*滚动条的背景区域的内阴影*/
+    box-shadow:0px 1px 3px rgba(0,0,0,0.3) inset;
+
+    /*滚动条的背景区域的圆角*/
+    border-radius: 0px;  
+
+    /*滚动条的背景颜色*/
+    background-color: #ddd;
+}  
+  
+/*定义滑块 内阴影+圆角*/  
+#BG2::-webkit-scrollbar-thumb  
+{  
+    /*滚动条的内阴影*/
+    box-shadow:0px 1px 3px rgba(0,0,0,0.3) inset;
+
+    /*滚动条的圆角*/
+    border-radius: 10px;  
+
+    /*滚动条的背景颜色*/
+    background-color: #aaa;  
+}

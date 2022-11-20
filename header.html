@@ -172,7 +172,7 @@
           </a>
           <a
             class="header_info_navgation_item product"
-            href="./product.html"
+            href="./product_center.html"
           >
             Product
           </a>
@@ -180,6 +180,36 @@
             class="header_info_navgation_item support"
           >
             Support
+            <div class="support_info">
+              <div class="support_info_item" data-href="./rfq.html">
+                <i class="iconfont">&#xe686;</i>
+                <div class="support_info_item_main">
+                  <h3 class="support_info_item_main_title">FAQ</h3>
+                  <p class="support_info_item_main_desc">Explore & get instant answers</p>
+                </div>
+              </div>
+              <div class="support_info_item" data-href="./aboutus.html">
+                <i class="iconfont">&#xe68b;</i>
+                <div class="support_info_item_main">
+                  <h3 class="support_info_item_main_title">Technical Support</h3>
+                  <p class="support_info_item_main_desc">Professional</p>
+                </div>
+              </div>
+              <div class="support_info_item" data-href="./contactus.html">
+                <i class="iconfont">&#xe684;</i>
+                <div class="support_info_item_main">
+                  <h3 class="support_info_item_main_title">Contact us</h3>
+                  <p class="support_info_item_main_desc">For quick & best customer service</p>
+                </div>
+              </div>
+              <div class="support_info_item" data-href="./aboutus.html">
+                <i class="iconfont">&#xe685;</i>
+                <div class="support_info_item_main">
+                  <h3 class="support_info_item_main_title">Online Chat</h3>
+                  <p class="support_info_item_main_desc">Get a fast reply to your questions</p>
+                </div>
+              </div>
+            </div>
           </a>
           <a
             class="header_info_navgation_item express"
@@ -229,7 +259,6 @@
       $('#product').show();
     });
     $('body').click(function(event){
-      console.log('event', event);
       let className = event.target.className;
       if (className.indexOf('header_container_toolTip_search') != -1) {
         return;
@@ -245,6 +274,10 @@
     $('.search_view_list_item').click(function(){
       $(".header_container_toolTip_search_main_keyword").val($(this).text());
       $('.header_container_toolTip_search_list').hide();
+    });
+    $('.support_info_item').click(function(){
+      let href = $(this).data('href');
+      window.location.href = href;
     })
   });
 </script>

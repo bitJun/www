@@ -8,9 +8,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">    
     <link href="./css/common.css" rel="stylesheet">
     <link href="./css/express.css" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="./css/">
-    <link type="text/css" rel="stylesheet" href="./skin/jedate.css">
-    <script type="text/javascript" src="./js/jedate.js"></script>
+    <link href="./css/rili.css" rel="stylesheet">
     <title>Express</title>
   </head>
   <body>
@@ -71,15 +69,12 @@
                 <div class="express_view_section_left_list_main_list">
                   <div class="express_view_section_left_list_main_list_item">BMI270</div>
                   <div class="express_view_section_left_list_main_list_item">BMI270</div>
+                  <div class="express_view_section_left_list_main_list_item">LIS2DW12TR7586344444478</div>
+                  <div class="express_view_section_left_list_main_list_item">LIS2DW12TR7586344444478</div>
                   <div class="express_view_section_left_list_main_list_item">BMI270</div>
                   <div class="express_view_section_left_list_main_list_item">BMI270</div>
                   <div class="express_view_section_left_list_main_list_item">BMI270</div>
                   <div class="express_view_section_left_list_main_list_item">BMI270</div>
-                  <div class="express_view_section_left_list_main_list_item">LIS2DW12TR7586344444478</div>
-                  <div class="express_view_section_left_list_main_list_item">LIS2DW12TR7586344444478</div>
-                  <div class="express_view_section_left_list_main_list_item">LIS2DW12TR7586344444478</div>
-                  <div class="express_view_section_left_list_main_list_item">LIS2DW12TR7586344444478</div>
-                  <div class="express_view_section_left_list_main_list_item">LIS2DW12TR7586344444478</div>
                   <div class="express_view_section_left_list_main_list_item">LIS2DW12TR7586344444478</div>
                 </div>
               </div>
@@ -99,14 +94,14 @@
                 </div>
               </div>
               <div class="express_view_section_nav_item date">
-                Upload date
+                <span>Upload date</span>
                 <i class="iconfont">&#xe671;</i>
                 <div class="express_view_section_nav_item_detail">
                   <input
                     class="express_view_section_nav_item_detail_value"
                     placeholder="Select date"
                   />
-                  <div class="jefixeitem" id="show01"></div>
+                  <div id="datatime"></div>
                   <div class="express_view_section_nav_item_detail_finish">Finish</div>
                 </div>
               </div>
@@ -378,9 +373,11 @@
   </body>
   <script src="./js/jquery-3.6.1.min.js"></script>
   <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/rili.js"></script>
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"> </script>
   <script>
     $(document).ready(function(){
+      let chooseTime = null;
       $('#header').load('./header.html');
       $('#footer').load('./footer.html');
       var mySwiper = new Swiper ('.swiper', {
@@ -400,29 +397,19 @@
         let val = $(this).text();
         $('.express_view_section_nav_item span').text(val);
       });
-      var enLang = {                            
-        name  : "en",
-        month : ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"],
-        weeks : [ "SUN","MON","TUR","WED","THU","FRI","SAT" ],
-        times : ["Hour","Minute","Second"],
-        timetxt: ["Time","Start Time","End Time"],
-        backtxt:"Back",
-        clear : "Clear",
-        today : "Now",
-        yes   : "Confirm",
-        close : "Close"
-      }
-      jeDate("#show01",{
-        isShow:false,
-        theme:{bgcolor:"#DE3E46",pnColor:"#C7CDD2"},
-        format: "YYYY-MM-DD",
-        okfun:function(elem, val) {
-          console.log('val', val, 'elem', elem, jeDate.addDate(val))
-        },
-        choosefun: function(elem,datas){
-          alert($.getLunar(datas).cWeek);
-        }
+      $('.swiper-slide').click(function(){
+        window.open('http://www.baidu.com')
       });
+      $('#datatime').rili({
+				date:function(res){
+					console.log('选中时间：',res)
+          chooseTime = res;
+          $('.express_view_section_nav_item_detail_value').val(res);
+				}
+			});
+      $('.express_view_section_nav_item_detail_finish').click(function(){
+        $('.express_view_section_nav_item.date').find('span').text(chooseTime)
+      })
 		});
   </script>
 </html>

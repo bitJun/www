@@ -126,11 +126,11 @@
 }
 .express_view_section_left_list_main_list {
   display: flex;
-  gap: 40px;
   flex-wrap: wrap;
   padding-left: 22px;
 }
 .express_view_section_left_list_main_list_item {
+  margin-right: 40px;
   height: 20px;
   font-size: 14px;
   font-family: Source Han Sans SC-Regular, Source Han Sans SC;
@@ -199,7 +199,7 @@
   cursor: pointer;
 }
 .express_view_section_nav_item_detail {
-  /* display: none; */
+  display: none;
   position: absolute;
   left: 0;
   top: 46px;
@@ -234,12 +234,25 @@
   font-weight: bold;
   color: #FFFFFF;
 }
-.jedate,
-.jedate .jedate-pane {
+.xsw_dateX {
   width: 260px !important;
+  margin-bottom: 20px;
+}
+#chaDian {
+  display: none !important;
 }
 .express_view_section_nav_item.date:hover .express_view_section_nav_item_detail {
   display: block;
+}
+.express_view_section_nav_item:hover {
+  color: #8A9197;
+}
+.express_view_section_nav_item:hover .iconfont{
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 .express_view_section_content {
   padding: 10px 0 0 10px;

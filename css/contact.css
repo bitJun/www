@@ -61,7 +61,7 @@
 .contact_section_banner_title::after {
   content: '';
   position: absolute;
-  right: 0;
+  left: 270px;
   bottom: 0;
   width: 74px;
   height: 10px;
