@@ -31,6 +31,7 @@
             <input
               type="text"
               class="register_view_right_main_control_value"
+              id="email"
             />
           </div>
           <div class="register_view_right_main_control">
@@ -38,8 +39,9 @@
               <label class="register_view_right_main_control_tip_red">*</label>&nbsp;&nbsp;Please enter password
             </div>
             <input
-              type="text"
+              type="password"
               class="register_view_right_main_control_value"
+              id="password"
             />
           </div>
           <div class="register_view_right_main_control">
@@ -49,6 +51,7 @@
             <input
               type="text"
               class="register_view_right_main_control_value"
+              id="confirm_password"
             />
           </div>
           <div class="register_view_right_main_control">
@@ -58,6 +61,7 @@
             <input
               type="text"
               class="register_view_right_main_control_value"
+              id="ContactName"
             />
           </div>
           <div class="register_view_right_main_control">
@@ -67,6 +71,7 @@
             <input
               type="text"
               class="register_view_right_main_control_value"
+              id="Company"
             />
           </div>
           <div class="register_view_right_main_control" style="margin-bottom: 44px">
@@ -115,8 +120,6 @@
   <script src="./js/bootstrap.min.js"></script>
   <script>
     $(document).ready(function(){
-      // $('#header').load('./header.html');
-      // $('#footer').load('./footer.html');
       $('body').click(function(e){
         let className = e.target.className;
         let includeClass = ['register_view_right_main_control_list', 'register_view_right_main_control_list_item'];
@@ -133,6 +136,27 @@
         let text = $(this).text();
         $('#country').val(text);
         $('.register_view_right_main_control_list').hide()
+      });
+      $('.register_view_right_main_action.sign').click(function(){
+        let params = {
+          email: $('#email').val(),
+          password: $('#password').val(),
+          ContactName: $('#ContactName').val(),
+          Company: $('#Company').val(),
+          country: $('#country').val()
+        }
+        $.ajax({
+          url: 'https://www.baidu.com',
+          type: 'post',
+          data: params,
+          dataType: 'json',
+          success: function() {
+
+          },
+          error: function() {
+
+          }
+        })
       })
 		});
   </script>

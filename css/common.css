@@ -197,6 +197,7 @@ body {
   opacity: 1;
   padding: 30px;
   box-sizing: border-box;
+  z-index: 9999;
 }
 .header_container_toolTip_actions_user:hover .signIn_content {
   display: block;
