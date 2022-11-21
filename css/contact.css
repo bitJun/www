@@ -13,6 +13,7 @@
 }
 .contact_container {
   background: #FFFFFF;
+  min-width: 1440px;
   margin-bottom: 100px;
 }
 .contact_nav {

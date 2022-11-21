@@ -24,6 +24,7 @@ body {
   background: #F8F9FB;
   border-radius: 0px 0px 0px 0px;
   opacity: 1;
+  min-width: 1440px;
 }
 .flex {
   display: flex;
@@ -43,6 +44,7 @@ body {
   border-radius: 0px 0px 0px 0px;
   padding-top: 12px;
   box-sizing: border-box;
+  min-width: 1440px;
 }
 .header_container {
   width: 1440px;
@@ -410,6 +412,7 @@ body {
 }
 .footer_main {
   height: 520px;
+  min-width: 1440px;
   background: linear-gradient(#280406 0%, #280406 100%);
   border-radius: 0px 0px 0px 0px;
   opacity: 1;
@@ -522,6 +525,7 @@ body {
 
 .container_view {
   width: 1440px;
+  min-width: 1440px;
   margin: 0 auto;
 }
 .content {

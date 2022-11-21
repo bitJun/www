@@ -318,6 +318,7 @@
   margin-bottom: 100px;
   padding-top: 106px;
   box-sizing: border-box;
+  min-width: 1440px;
 }
 .express_view_crosschips_title {
   text-align: center;

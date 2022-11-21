@@ -400,6 +400,7 @@
   opacity: 1;
   margin-bottom: 103px;
   padding-top: 106px;
+  min-width: 1440px;
   box-sizing: border-box;
 }
 .index_view_crosschips_title {

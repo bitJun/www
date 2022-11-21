@@ -12,6 +12,7 @@
   color: #292A2B;
 }
 .about_container {
+  min-width: 1440px;
   background: #FFFFFF;
   margin-bottom: 100px;
 }
